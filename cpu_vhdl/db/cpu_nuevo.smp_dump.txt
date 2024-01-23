@@ -1,0 +1,13 @@
+
+State Machine - |cpu_nuevo|estadoSiguiente
+Name estadoSiguiente.incrementar_pc estadoSiguiente.cargar_op1 estadoSiguiente.leer_ri estadoSiguiente.mostrar_salida estadoSiguiente.leer_ram estadoSiguiente.escribir_ram estadoSiguiente.espera estadoSiguiente.inicio estadoSiguiente.activar_pc estadoSiguiente.reset_pc 
+estadoSiguiente.reset_pc 0 0 0 0 0 0 0 0 0 0 
+estadoSiguiente.activar_pc 0 0 0 0 0 0 0 0 1 1 
+estadoSiguiente.inicio 0 0 0 0 0 0 0 1 0 1 
+estadoSiguiente.espera 0 0 0 0 0 0 1 0 0 1 
+estadoSiguiente.escribir_ram 0 0 0 0 0 1 0 0 0 1 
+estadoSiguiente.leer_ram 0 0 0 0 1 0 0 0 0 1 
+estadoSiguiente.mostrar_salida 0 0 0 1 0 0 0 0 0 1 
+estadoSiguiente.leer_ri 0 0 1 0 0 0 0 0 0 1 
+estadoSiguiente.cargar_op1 0 1 0 0 0 0 0 0 0 1 
+estadoSiguiente.incrementar_pc 1 0 0 0 0 0 0 0 0 1 

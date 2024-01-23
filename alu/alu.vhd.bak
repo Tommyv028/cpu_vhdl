@@ -1,0 +1,33 @@
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.std_logic_arith.all;
+use IEEE.std_logic_unsigned.all;
+
+entity alu is 
+	port(
+		clk: in std_logic:='0';
+		carry,ov,zeta: out std_logic:='0';
+		op1: in std_logic_vector (7 downto 0):="00000000";
+		op2: in std_logic_vector(7 downto 0):="00000000";
+		cod_op: in std_logic_vector(2 downto 0):="000";
+		resultado: out std_logic_vector(7 downto 0):="00000000";
+end entity alu;
+
+architecture estructural of alu is
+signal bufferr: std_logic_vector (8 downto 0);
+begin
+	proceso: process (clk,op1,op2,cod_op)
+	begin
+		if clk'event and clk='1' then
+			case cod_op is
+				when "000"=>
+					
+				when "001"=>
+				when "010"=>
+				when "011"=>
+				when "100"=>
+				when "101"=>
+				when "110"=>
+		end if;
+	end process;
+end architecture estructural;

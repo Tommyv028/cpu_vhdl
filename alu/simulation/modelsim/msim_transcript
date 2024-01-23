@@ -1,0 +1,53 @@
+# Reading D:/Altera/modelsim_ase/tcl/vsim/pref.tcl 
+# do alu_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\Altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\Altera\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/alu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity alu
+# -- Compiling architecture estructural of alu
+# 
+# vcom -93 -work work {E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/simulation/modelsim/alu.vht}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity alu_vhd_tst
+# -- Compiling architecture alu_arch of alu_vhd_tst
+# ** Warning: [4] E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/simulation/modelsim/alu.vht(77): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/simulation/modelsim/alu.vht(79): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/simulation/modelsim/alu.vht(89): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/simulation/modelsim/alu.vht(92): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/simulation/modelsim/alu.vht(95): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/simulation/modelsim/alu.vht(98): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/simulation/modelsim/alu.vht(101): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  alu_vhd_tst
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps alu_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.alu_vhd_tst(alu_arch)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.alu(estructural)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run 1 us

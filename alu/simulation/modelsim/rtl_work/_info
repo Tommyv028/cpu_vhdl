@@ -1,0 +1,79 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Facultad\4-Cuarto año\Diseño de sistemas digitales\alunew\alu\alu\simulation\modelsim
+Ealu
+Z1 w1698962016
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
+Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
+Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z6 dE:\Facultad\4-Cuarto año\Diseño de sistemas digitales\alunew\alu\alu\simulation\modelsim
+Z7 8E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/alu.vhd
+Z8 FE:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/alu.vhd
+l0
+L6
+VV>1lQ=HoTa9BUe9Rk3i;_3
+Z9 OV;C;10.1d;51
+31
+Z10 !s108 1698962193.815000
+Z11 !s90 -reportprogress|300|-93|-work|work|E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/alu.vhd|
+Z12 !s107 E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/alu.vhd|
+Z13 o-93 -work work -O0
+Z14 tExplicit 1
+!s100 0CDcKdg[fVzS^lB@7LLml0
+!i10b 1
+Aestructural
+R2
+R3
+R4
+R5
+DEx4 work 3 alu 0 22 V>1lQ=HoTa9BUe9Rk3i;_3
+l17
+L16
+Vjcji7U]nfiYZDEh2d`TW]0
+R9
+31
+R10
+R11
+R12
+R13
+R14
+!s100 RlRbkej8hkPIPl@kGTJQf2
+!i10b 1
+Ealu_vhd_tst
+Z15 w1698962188
+R4
+R5
+R6
+Z16 8E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/simulation/modelsim/alu.vht
+Z17 FE:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/simulation/modelsim/alu.vht
+l0
+L30
+VB_i1l@Cz3jVVzP]30G:2W2
+!s100 @Y@ZL[0j_X[<PaJWH18N12
+R9
+31
+!i10b 1
+Z18 !s108 1698962194.511000
+Z19 !s90 -reportprogress|300|-93|-work|work|E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/simulation/modelsim/alu.vht|
+Z20 !s107 E:/Facultad/4-Cuarto año/Diseño de sistemas digitales/alunew/alu/alu/simulation/modelsim/alu.vht|
+R13
+R14
+Aalu_arch
+R4
+R5
+DEx4 work 11 alu_vhd_tst 0 22 B_i1l@Cz3jVVzP]30G:2W2
+l55
+L32
+V@HoG3R>IaFWFQ<>>LTD^S3
+!s100 Of@mZgJJAUh9eOMGbU7R]1
+R9
+31
+!i10b 1
+R18
+R19
+R20
+R13
+R14
