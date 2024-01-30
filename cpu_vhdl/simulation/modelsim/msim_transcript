@@ -37,29 +37,33 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity cpu_nuevo
 # -- Compiling architecture cpu of cpu_nuevo
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(153): (vcom-1013) Initial value of "en_pc_v" depends on value of signal "en_pc".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(170): (vcom-1013) Initial value of "en_pc_v" depends on value of signal "en_pc".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(154): (vcom-1013) Initial value of "wr_pc_v" depends on value of signal "wr_pc".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(171): (vcom-1013) Initial value of "wr_pc_v" depends on value of signal "wr_pc".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(155): (vcom-1013) Initial value of "en_ram_v" depends on value of signal "en_ram".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(172): (vcom-1013) Initial value of "en_ram_v" depends on value of signal "en_ram".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(156): (vcom-1013) Initial value of "wr_ram_v" depends on value of signal "wr_ram".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(173): (vcom-1013) Initial value of "wr_ram_v" depends on value of signal "wr_ram".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(157): (vcom-1013) Initial value of "en_ri_v" depends on value of signal "en_ri".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(174): (vcom-1013) Initial value of "en_ri_v" depends on value of signal "en_ri".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(158): (vcom-1013) Initial value of "wr_ri_v" depends on value of signal "wr_ri".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(175): (vcom-1013) Initial value of "wr_ri_v" depends on value of signal "wr_ri".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(159): (vcom-1013) Initial value of "en_salida_v" depends on value of signal "en_salida".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(176): (vcom-1013) Initial value of "en_salida_v" depends on value of signal "en_salida".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(160): (vcom-1013) Initial value of "wr_salida_v" depends on value of signal "wr_salida".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(177): (vcom-1013) Initial value of "wr_salida_v" depends on value of signal "wr_salida".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(161): (vcom-1013) Initial value of "en_data_v" depends on value of signal "en_data".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(178): (vcom-1013) Initial value of "en_data_v" depends on value of signal "en_data".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(162): (vcom-1013) Initial value of "wr_data_v" depends on value of signal "wr_data".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(179): (vcom-1013) Initial value of "wr_data_v" depends on value of signal "wr_data".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(163): (vcom-1013) Initial value of "en_op1_v" depends on value of signal "en_op1".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(180): (vcom-1013) Initial value of "en_op1_v" depends on value of signal "en_op1".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(164): (vcom-1013) Initial value of "wr_op1_v" depends on value of signal "wr_op1".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(181): (vcom-1013) Initial value of "wr_op1_v" depends on value of signal "wr_op1".
+# 
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(182): (vcom-1013) Initial value of "en_op2_v" depends on value of signal "en_op2".
+# 
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(183): (vcom-1013) Initial value of "wr_op2_v" depends on value of signal "wr_op2".
 # 
 # 
 # vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht}
@@ -69,23 +73,23 @@
 # -- Loading package std_logic_1164
 # -- Compiling entity cpu_nuevo_vhd_tst
 # -- Compiling architecture cpu_nuevo_arch of cpu_nuevo_vhd_tst
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(57): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(59): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(61): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(72): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(74): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(79): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(81): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(83): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(85): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(87): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(89): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(91): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(93): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(95): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(97): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(99): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(101): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(60): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(62): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(75): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(82): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(84): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(86): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(88): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(90): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(92): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(94): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(96): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(98): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(100): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(102): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  cpu_nuevo_vhd_tst
 # vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps cpu_nuevo_vhd_tst 
@@ -106,16 +110,26 @@
 # .main_pane.objects.interior.cs.body.tree
 # run 10 us
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/estadoActual
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/estadoSiguiente
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_ri
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_ri
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_salida
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_salida
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_pc
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_pc
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_op1
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_op1
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_op2
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_op2
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_resultado
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_resultado
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_status
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_status
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_data
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_data
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_ram
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_ram
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/op_a_cargar
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_ram
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_ram
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_pc
@@ -123,13 +137,21 @@ add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_ri
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_ri
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_op1
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_op1
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_op2
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_op2
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_data
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_data
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_resultado
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_resultado
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_status
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_status
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_salida
+add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_salida
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_pc
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/posicion_ram
 add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/posicion_actual
-reset
-# invalid command name "reset"
+restart
+run 10us}
 run 10us
 # ** Fatal: (vsim-3734) Index value 64 is out of range 63 downto 0.
 #    Time: 12390 ns  Iteration: 1  Process: /cpu_nuevo_vhd_tst/i1/r_ram/proceso File: Z:/aRepos GitHub/cpu_vhdl/memoria8b/memoria8b.vhd
@@ -138,7 +160,7 @@ run 10us
 # HDL call sequence:
 # Stopped at Z:/aRepos GitHub/cpu_vhdl/memoria8b/memoria8b.vhd 25 Process proceso
 # 
-reset
-# invalid command name "reset"
-restar
+
+restart
+
 run 10us

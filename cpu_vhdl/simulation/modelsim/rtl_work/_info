@@ -4,7 +4,7 @@ K3
 cModel Technology
 Z0 dZ:\aRepos GitHub\cpu_vhdl\cpu_vhdl\simulation\modelsim
 Ecpu_nuevo
-Z1 w1706562903
+Z1 w1706650580
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
@@ -17,7 +17,7 @@ L6
 V;7DSAjcQjI1co]z<]4<Y@1
 Z9 OV;C;10.1d;51
 31
-Z10 !s108 1706562927.932000
+Z10 !s108 1706651571.582000
 Z11 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd|
 Z12 !s107 Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd|
 Z13 o-93 -work work -O0
@@ -32,7 +32,7 @@ R5
 DEx4 work 9 cpu_nuevo 0 22 ;7DSAjcQjI1co]z<]4<Y@1
 l57
 L13
-VZNI1O>eI]e:MGcQVamDI<2
+Vo_[UUWk07]5hiBOijfZAb0
 R9
 31
 R10
@@ -40,10 +40,10 @@ R11
 R12
 R13
 R14
-!s100 JWEE4j`>OJ^VZ2nIoF3Cz1
+!s100 9l>_AcFC=eQT4kiaee?cV3
 !i10b 1
 Ecpu_nuevo_vhd_tst
-Z15 w1706557784
+Z15 w1706651560
 R4
 R5
 R6
@@ -56,7 +56,7 @@ VN@S?VfINJDmETF7QB:V4k1
 R9
 31
 !i10b 1
-Z18 !s108 1706562928.182000
+Z18 !s108 1706651571.834000
 Z19 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht|
 Z20 !s107 Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht|
 R13
@@ -67,8 +67,8 @@ R5
 DEx4 work 17 cpu_nuevo_vhd_tst 0 22 N@S?VfINJDmETF7QB:V4k1
 l45
 L32
-Ve@2_E?l[PPSKD]CDG<kl<3
-!s100 [zz:DV:S1NA]0;JAo=7gI0
+V=ki4AU5Bnd9S:LI<e9<P]1
+!s100 ZlW8geY>l2mILb<Ig87J41
 R9
 31
 !i10b 1
@@ -91,7 +91,7 @@ L6
 V=mc`zbFh9TaKaY^3lgXfc0
 R9
 31
-Z24 !s108 1706562927.790000
+Z24 !s108 1706651571.449000
 Z25 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl/memoria8b/memoria8b.vhd|
 Z26 !s107 Z:/aRepos GitHub/cpu_vhdl/memoria8b/memoria8b.vhd|
 R13
@@ -130,7 +130,7 @@ L6
 V_j8RG;@e;`feTeGbfS2UM2
 R9
 31
-Z30 !s108 1706562927.596000
+Z30 !s108 1706651571.097000
 Z31 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl/registro8b/registro8b.vhd|
 Z32 !s107 Z:/aRepos GitHub/cpu_vhdl/registro8b/registro8b.vhd|
 R13

@@ -50,6 +50,7 @@ BEGIN
 	data_in => data_in,
 	salida => salida
 	);
+
 init : PROCESS                                               
 -- variable declarations                                     
 BEGIN                                                        
@@ -87,7 +88,7 @@ BEGIN
 	wait for 20ns;
 	data_in<="ZZZZZZZZ";
 	wait for 60ns;
-	data_in<="00001000";
+	data_in<="00010000";
 	wait for 20ns;
 	data_in<="ZZZZZZZZ";
 	wait for 60ns;
