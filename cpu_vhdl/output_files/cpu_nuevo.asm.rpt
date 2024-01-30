@@ -1,5 +1,5 @@
 Assembler report for cpu_nuevo
-Tue Jan 23 19:11:50 2024
+Mon Jan 29 18:15:10 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: D:/a UADER/d Cuarto año/i Diseño de Sistemas Digitales/proyects/cpu_nuevo (0 elemotos logicos)/output_files/cpu_nuevo.sof
-  6. Assembler Device Options: D:/a UADER/d Cuarto año/i Diseño de Sistemas Digitales/proyects/cpu_nuevo (0 elemotos logicos)/output_files/cpu_nuevo.pof
+  5. Assembler Device Options: Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/output_files/cpu_nuevo.sof
+  6. Assembler Device Options: Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/output_files/cpu_nuevo.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Tue Jan 23 19:11:50 2024 ;
+; Assembler Status      ; Successful - Mon Jan 29 18:15:10 2024 ;
 ; Revision Name         ; cpu_nuevo                             ;
 ; Top-level Entity Name ; cpu_nuevo                             ;
 ; Family                ; Cyclone II                            ;
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------+
-; Assembler Generated Files                                                                                                 ;
-+---------------------------------------------------------------------------------------------------------------------------+
-; File Name                                                                                                                 ;
-+---------------------------------------------------------------------------------------------------------------------------+
-; D:/a UADER/d Cuarto año/i Diseño de Sistemas Digitales/proyects/cpu_nuevo (0 elemotos logicos)/output_files/cpu_nuevo.sof ;
-; D:/a UADER/d Cuarto año/i Diseño de Sistemas Digitales/proyects/cpu_nuevo (0 elemotos logicos)/output_files/cpu_nuevo.pof ;
-+---------------------------------------------------------------------------------------------------------------------------+
++---------------------------------------------------------------+
+; Assembler Generated Files                                     ;
++---------------------------------------------------------------+
+; File Name                                                     ;
++---------------------------------------------------------------+
+; Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/output_files/cpu_nuevo.sof ;
+; Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/output_files/cpu_nuevo.pof ;
++---------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/a UADER/d Cuarto año/i Diseño de Sistemas Digitales/proyects/cpu_nuevo (0 elemotos logicos)/output_files/cpu_nuevo.sof ;
-+----------------+------------------------------------------------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                                                            ;
-+----------------+------------------------------------------------------------------------------------------------------------------------------------+
-; Device         ; EP2C5T144C8                                                                                                                        ;
-; JTAG usercode  ; 0x0008884E                                                                                                                         ;
-; Checksum       ; 0x0008884E                                                                                                                         ;
-+----------------+------------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Assembler Device Options: Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/output_files/cpu_nuevo.sof ;
++----------------+------------------------------------------------------------------------+
+; Option         ; Setting                                                                ;
++----------------+------------------------------------------------------------------------+
+; Device         ; EP2C5T144C8                                                            ;
+; JTAG usercode  ; 0x00091A2C                                                             ;
+; Checksum       ; 0x00091A2C                                                             ;
++----------------+------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: D:/a UADER/d Cuarto año/i Diseño de Sistemas Digitales/proyects/cpu_nuevo (0 elemotos logicos)/output_files/cpu_nuevo.pof ;
-+--------------------+--------------------------------------------------------------------------------------------------------------------------------+
-; Option             ; Setting                                                                                                                        ;
-+--------------------+--------------------------------------------------------------------------------------------------------------------------------+
-; Device             ; EPCS4                                                                                                                          ;
-; JTAG usercode      ; 0x00000000                                                                                                                     ;
-; Checksum           ; 0x074FEEEB                                                                                                                     ;
-; Compression Ratio  ; 3                                                                                                                              ;
-+--------------------+--------------------------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Assembler Device Options: Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/output_files/cpu_nuevo.pof ;
++--------------------+--------------------------------------------------------------------+
+; Option             ; Setting                                                            ;
++--------------------+--------------------------------------------------------------------+
+; Device             ; EPCS4                                                              ;
+; JTAG usercode      ; 0x00000000                                                         ;
+; Checksum           ; 0x074F778D                                                         ;
+; Compression Ratio  ; 3                                                                  ;
++--------------------+--------------------------------------------------------------------+
 
 
 +--------------------+
@@ -117,14 +117,14 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Jan 23 19:11:48 2024
+    Info: Processing started: Mon Jan 29 18:15:09 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off cpu_nuevo -c cpu_nuevo
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4538 megabytes
-    Info: Processing ended: Tue Jan 23 19:11:50 2024
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4549 megabytes
+    Info: Processing ended: Mon Jan 29 18:15:10 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for cpu_nuevo
-Tue Jan 23 19:11:42 2024
+Mon Jan 29 18:15:05 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -18,17 +18,15 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  10. User-Specified and Inferred Latches
  11. Logic Cells Representing Combinational Loops
  12. Registers Removed During Synthesis
- 13. Removed Registers Triggering Further Register Optimizations
- 14. General Register Statistics
- 15. Registers Packed Into Inferred Megafunctions
- 16. Multiplexer Restructuring Statistics (Restructuring Performed)
- 17. Source assignments for memoria8b:r_ram|altsyncram:ram_rtl_0|altsyncram_kml1:auto_generated
- 18. Parameter Settings for Inferred Entity Instance: memoria8b:r_ram|altsyncram:ram_rtl_0
- 19. altsyncram Parameter Settings by Entity Instance
- 20. Port Connectivity Checks: "registro8b:r_salida"
- 21. Port Connectivity Checks: "registro8b:r_operador1"
- 22. Elapsed Time Per Partition
- 23. Analysis & Synthesis Messages
+ 13. General Register Statistics
+ 14. Registers Packed Into Inferred Megafunctions
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Source assignments for memoria8b:r_ram|altsyncram:ram_rtl_0|altsyncram_kml1:auto_generated
+ 17. Parameter Settings for Inferred Entity Instance: memoria8b:r_ram|altsyncram:ram_rtl_0
+ 18. altsyncram Parameter Settings by Entity Instance
+ 19. Port Connectivity Checks: "registro8b:r_salida"
+ 20. Elapsed Time Per Partition
+ 21. Analysis & Synthesis Messages
 
 
 
@@ -54,15 +52,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jan 23 19:11:42 2024           ;
+; Analysis & Synthesis Status        ; Successful - Mon Jan 29 18:15:05 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; cpu_nuevo                                       ;
 ; Top-level Entity Name              ; cpu_nuevo                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 108                                             ;
-;     Total combinational functions  ; 93                                              ;
-;     Dedicated logic registers      ; 38                                              ;
-; Total registers                    ; 38                                              ;
+; Total logic elements               ; 176                                             ;
+;     Total combinational functions  ; 144                                             ;
+;     Dedicated logic registers      ; 83                                              ;
+; Total registers                    ; 83                                              ;
 ; Total pins                         ; 19                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 512                                             ;
@@ -167,26 +165,26 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                                                                                         ;
-+----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path             ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                                                                                ; Library ;
-+----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------+
-; ../registro8b/registro8b.vhd                 ; yes             ; User VHDL File                                        ; D:/a UADER/d Cuarto año/i Diseño de Sistemas Digitales/proyects/registro8b/registro8b.vhd                                                   ;         ;
-; ../memoria8b/memoria8b.vhd                   ; yes             ; User VHDL File                                        ; D:/a UADER/d Cuarto año/i Diseño de Sistemas Digitales/proyects/memoria8b/memoria8b.vhd                                                     ;         ;
-; cpu_nuevo.vhd                                ; yes             ; User VHDL File                                        ; D:/a UADER/d Cuarto año/i Diseño de Sistemas Digitales/proyects/cpu_nuevo (0 elemotos logicos)/cpu_nuevo.vhd                                ;         ;
-; altsyncram.tdf                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                                                                            ;         ;
-; stratix_ram_block.inc                        ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc                                                                     ;         ;
-; lpm_mux.inc                                  ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                                                                               ;         ;
-; lpm_decode.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                                                                            ;         ;
-; aglobal130.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                                                                            ;         ;
-; a_rdenreg.inc                                ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                                                                             ;         ;
-; altrom.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                                                                                ;         ;
-; altram.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                                                                                ;         ;
-; altdpram.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                                                                              ;         ;
-; db/altsyncram_kml1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; D:/a UADER/d Cuarto año/i Diseño de Sistemas Digitales/proyects/cpu_nuevo (0 elemotos logicos)/db/altsyncram_kml1.tdf                       ;         ;
-; db/cpu_nuevo.ram0_memoria8b_e2bb252e.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; D:/a UADER/d Cuarto año/i Diseño de Sistemas Digitales/proyects/cpu_nuevo (0 elemotos logicos)/db/cpu_nuevo.ram0_memoria8b_e2bb252e.hdl.mif ;         ;
-+----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
++----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path             ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                    ; Library ;
++----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------+---------+
+; ../registro8b/registro8b.vhd                 ; yes             ; User VHDL File                                        ; Z:/aRepos GitHub/cpu_vhdl/registro8b/registro8b.vhd                             ;         ;
+; ../memoria8b/memoria8b.vhd                   ; yes             ; User VHDL File                                        ; Z:/aRepos GitHub/cpu_vhdl/memoria8b/memoria8b.vhd                               ;         ;
+; cpu_nuevo.vhd                                ; yes             ; User VHDL File                                        ; Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd                                ;         ;
+; altsyncram.tdf                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altsyncram.tdf                ;         ;
+; stratix_ram_block.inc                        ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/stratix_ram_block.inc         ;         ;
+; lpm_mux.inc                                  ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_mux.inc                   ;         ;
+; lpm_decode.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/lpm_decode.inc                ;         ;
+; aglobal130.inc                               ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/aglobal130.inc                ;         ;
+; a_rdenreg.inc                                ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/a_rdenreg.inc                 ;         ;
+; altrom.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altrom.inc                    ;         ;
+; altram.inc                                   ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altram.inc                    ;         ;
+; altdpram.inc                                 ; yes             ; Megafunction                                          ; c:/altera/13.0sp1/quartus/libraries/megafunctions/altdpram.inc                  ;         ;
+; db/altsyncram_kml1.tdf                       ; yes             ; Auto-Generated Megafunction                           ; Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/db/altsyncram_kml1.tdf                       ;         ;
+; db/cpu_nuevo.ram0_memoria8b_e2bb252e.hdl.mif ; yes             ; Auto-Generated Auto-Found Memory Initialization File  ; Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/db/cpu_nuevo.ram0_memoria8b_e2bb252e.hdl.mif ;         ;
++----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -194,29 +192,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 108        ;
+; Estimated Total logic elements              ; 176        ;
 ;                                             ;            ;
-; Total combinational functions               ; 93         ;
+; Total combinational functions               ; 144        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 14         ;
-;     -- 3 input functions                    ; 46         ;
-;     -- <=2 input functions                  ; 33         ;
+;     -- 4 input functions                    ; 18         ;
+;     -- 3 input functions                    ; 78         ;
+;     -- <=2 input functions                  ; 48         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 88         ;
-;     -- arithmetic mode                      ; 5          ;
+;     -- normal mode                          ; 137        ;
+;     -- arithmetic mode                      ; 7          ;
 ;                                             ;            ;
-; Total registers                             ; 38         ;
-;     -- Dedicated logic registers            ; 38         ;
+; Total registers                             ; 83         ;
+;     -- Dedicated logic registers            ; 83         ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
 ; I/O pins                                    ; 19         ;
 ; Total memory bits                           ; 512        ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ; Maximum fan-out node                        ; control[0] ;
-; Maximum fan-out                             ; 46         ;
-; Total fan-out                               ; 429        ;
-; Average fan-out                             ; 2.72       ;
+; Maximum fan-out                             ; 91         ;
+; Total fan-out                               ; 680        ;
+; Average fan-out                             ; 2.68       ;
 +---------------------------------------------+------------+
 
 
@@ -225,11 +223,13 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                            ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
-; |cpu_nuevo                                ; 93 (90)           ; 38 (10)      ; 512         ; 0            ; 0       ; 0         ; 19   ; 0            ; |cpu_nuevo                                                                     ; work         ;
+; |cpu_nuevo                                ; 144 (139)         ; 83 (19)      ; 512         ; 0            ; 0       ; 0         ; 19   ; 0            ; |cpu_nuevo                                                                     ; work         ;
 ;    |memoria8b:r_ram|                      ; 1 (1)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|memoria8b:r_ram                                                     ; work         ;
 ;       |altsyncram:ram_rtl_0|              ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|memoria8b:r_ram|altsyncram:ram_rtl_0                                ; work         ;
 ;          |altsyncram_kml1:auto_generated| ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|memoria8b:r_ram|altsyncram:ram_rtl_0|altsyncram_kml1:auto_generated ; work         ;
-;    |registro8b:r_pc|                      ; 1 (1)             ; 12 (12)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|registro8b:r_pc                                                     ; work         ;
+;    |registro8b:r_data|                    ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|registro8b:r_data                                                   ; work         ;
+;    |registro8b:r_operador1|               ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|registro8b:r_operador1                                              ; work         ;
+;    |registro8b:r_pc|                      ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|registro8b:r_pc                                                     ; work         ;
 ;    |registro8b:r_ri|                      ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|registro8b:r_ri                                                     ; work         ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -245,89 +245,126 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |cpu_nuevo|estadoSiguiente                                                                                                                                                                                                                                                                                  ;
-+--------------------------------+--------------------------------+----------------------------+-------------------------+--------------------------------+--------------------------+------------------------------+------------------------+------------------------+----------------------------+--------------------------+
-; Name                           ; estadoSiguiente.incrementar_pc ; estadoSiguiente.cargar_op1 ; estadoSiguiente.leer_ri ; estadoSiguiente.mostrar_salida ; estadoSiguiente.leer_ram ; estadoSiguiente.escribir_ram ; estadoSiguiente.espera ; estadoSiguiente.inicio ; estadoSiguiente.activar_pc ; estadoSiguiente.reset_pc ;
-+--------------------------------+--------------------------------+----------------------------+-------------------------+--------------------------------+--------------------------+------------------------------+------------------------+------------------------+----------------------------+--------------------------+
-; estadoSiguiente.reset_pc       ; 0                              ; 0                          ; 0                       ; 0                              ; 0                        ; 0                            ; 0                      ; 0                      ; 0                          ; 0                        ;
-; estadoSiguiente.activar_pc     ; 0                              ; 0                          ; 0                       ; 0                              ; 0                        ; 0                            ; 0                      ; 0                      ; 1                          ; 1                        ;
-; estadoSiguiente.inicio         ; 0                              ; 0                          ; 0                       ; 0                              ; 0                        ; 0                            ; 0                      ; 1                      ; 0                          ; 1                        ;
-; estadoSiguiente.espera         ; 0                              ; 0                          ; 0                       ; 0                              ; 0                        ; 0                            ; 1                      ; 0                      ; 0                          ; 1                        ;
-; estadoSiguiente.escribir_ram   ; 0                              ; 0                          ; 0                       ; 0                              ; 0                        ; 1                            ; 0                      ; 0                      ; 0                          ; 1                        ;
-; estadoSiguiente.leer_ram       ; 0                              ; 0                          ; 0                       ; 0                              ; 1                        ; 0                            ; 0                      ; 0                      ; 0                          ; 1                        ;
-; estadoSiguiente.mostrar_salida ; 0                              ; 0                          ; 0                       ; 1                              ; 0                        ; 0                            ; 0                      ; 0                      ; 0                          ; 1                        ;
-; estadoSiguiente.leer_ri        ; 0                              ; 0                          ; 1                       ; 0                              ; 0                        ; 0                            ; 0                      ; 0                      ; 0                          ; 1                        ;
-; estadoSiguiente.cargar_op1     ; 0                              ; 1                          ; 0                       ; 0                              ; 0                        ; 0                            ; 0                      ; 0                      ; 0                          ; 1                        ;
-; estadoSiguiente.incrementar_pc ; 1                              ; 0                          ; 0                       ; 0                              ; 0                        ; 0                            ; 0                      ; 0                      ; 0                          ; 1                        ;
-+--------------------------------+--------------------------------+----------------------------+-------------------------+--------------------------------+--------------------------+------------------------------+------------------------+------------------------+----------------------------+--------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |cpu_nuevo|estadoSiguiente                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      ;
++-----------------------------------+---------------------------+-------------------------------+-----------------------------------+----------------------------------+--------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+-----------------------------+-------------------------+--------------------------------+---------------------------------+--------------------------------+--------------------------+---------------------------------+----------------------------------+------------------------------+------------------------+--------------------------+--------------------------------+---------------------------------+------------------------+
+; Name                              ; estadoSiguiente.leer_data ; estadoSiguiente.escribir_data ; estadoSiguiente.activar_leer_data ; estadoSiguiente.activar_esc_data ; estadoSiguiente.incrementar_pc ; estadoSiguiente.leer_op1 ; estadoSiguiente.escribir_op1 ; estadoSiguiente.activar_esc_op1 ; estadoSiguiente.activar_leer_op1 ; estadoSiguiente.escribir_ri ; estadoSiguiente.leer_ri ; estadoSiguiente.activar_esc_ri ; estadoSiguiente.activar_leer_ri ; estadoSiguiente.mostrar_salida ; estadoSiguiente.leer_ram ; estadoSiguiente.activar_esc_ram ; estadoSiguiente.activar_leer_ram ; estadoSiguiente.escribir_ram ; estadoSiguiente.espera ; estadoSiguiente.reset_pc ; estadoSiguiente.activar_esc_pc ; estadoSiguiente.activar_leer_pc ; estadoSiguiente.inicio ;
++-----------------------------------+---------------------------+-------------------------------+-----------------------------------+----------------------------------+--------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+-----------------------------+-------------------------+--------------------------------+---------------------------------+--------------------------------+--------------------------+---------------------------------+----------------------------------+------------------------------+------------------------+--------------------------+--------------------------------+---------------------------------+------------------------+
+; estadoSiguiente.inicio            ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 0                      ;
+; estadoSiguiente.activar_leer_pc   ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 1                               ; 1                      ;
+; estadoSiguiente.activar_esc_pc    ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 1                              ; 0                               ; 1                      ;
+; estadoSiguiente.reset_pc          ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 1                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.espera            ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 1                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.escribir_ram      ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 1                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_leer_ram  ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 1                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_esc_ram   ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 1                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.leer_ram          ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 1                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.mostrar_salida    ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 1                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_leer_ri   ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 1                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_esc_ri    ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 1                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.leer_ri           ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 1                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.escribir_ri       ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 1                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_leer_op1  ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 1                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_esc_op1   ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 1                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.escribir_op1      ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 1                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.leer_op1          ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 1                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.incrementar_pc    ; 0                         ; 0                             ; 0                                 ; 0                                ; 1                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_esc_data  ; 0                         ; 0                             ; 0                                 ; 1                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_leer_data ; 0                         ; 0                             ; 1                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.escribir_data     ; 0                         ; 1                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.leer_data         ; 1                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
++-----------------------------------+---------------------------+-------------------------------+-----------------------------------+----------------------------------+--------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+-----------------------------+-------------------------+--------------------------------+---------------------------------+--------------------------------+--------------------------+---------------------------------+----------------------------------+------------------------------+------------------------+--------------------------+--------------------------------+---------------------------------+------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; User-Specified and Inferred Latches                                                                           ;
-+-----------------------------------------------------+--------------------------------+------------------------+
-; Latch Name                                          ; Latch Enable Signal            ; Free of Timing Hazards ;
-+-----------------------------------------------------+--------------------------------+------------------------+
-; salida[0]$latch                                     ; estadoSiguiente.mostrar_salida ; yes                    ;
-; salida[1]$latch                                     ; estadoSiguiente.mostrar_salida ; yes                    ;
-; salida[2]$latch                                     ; estadoSiguiente.mostrar_salida ; yes                    ;
-; salida[3]$latch                                     ; estadoSiguiente.mostrar_salida ; yes                    ;
-; salida[4]$latch                                     ; estadoSiguiente.mostrar_salida ; yes                    ;
-; salida[5]$latch                                     ; estadoSiguiente.mostrar_salida ; yes                    ;
-; salida[6]$latch                                     ; estadoSiguiente.mostrar_salida ; yes                    ;
-; salida[7]$latch                                     ; estadoSiguiente.mostrar_salida ; yes                    ;
-; in_ram[0]                                           ; WideOr16                       ; yes                    ;
-; posicion_ram[0]                                     ; posicion_ram                   ; yes                    ;
-; posicion_ram[1]                                     ; posicion_ram                   ; yes                    ;
-; posicion_ram[2]                                     ; posicion_ram                   ; yes                    ;
-; posicion_ram[3]                                     ; posicion_ram                   ; yes                    ;
-; posicion_ram[4]                                     ; posicion_ram                   ; yes                    ;
-; posicion_ram[5]                                     ; posicion_ram                   ; yes                    ;
-; in_ram[1]                                           ; WideOr16                       ; yes                    ;
-; in_ram[2]                                           ; WideOr16                       ; yes                    ;
-; in_ram[3]                                           ; WideOr16                       ; yes                    ;
-; in_ram[4]                                           ; WideOr16                       ; yes                    ;
-; in_ram[5]                                           ; WideOr16                       ; yes                    ;
-; in_ram[6]                                           ; WideOr16                       ; yes                    ;
-; in_ram[7]                                           ; WideOr16                       ; yes                    ;
-; in_pc[0]                                            ; WideOr18                       ; yes                    ;
-; in_pc[1]                                            ; WideOr18                       ; yes                    ;
-; in_pc[2]                                            ; WideOr18                       ; yes                    ;
-; in_pc[3]                                            ; WideOr18                       ; yes                    ;
-; in_pc[4]                                            ; WideOr18                       ; yes                    ;
-; in_pc[5]                                            ; WideOr18                       ; yes                    ;
-; in_ri[7]                                            ; WideOr17                       ; yes                    ;
-; in_ri[6]                                            ; WideOr17                       ; yes                    ;
-; in_ri[5]                                            ; WideOr17                       ; yes                    ;
-; in_ri[4]                                            ; WideOr17                       ; yes                    ;
-; in_ri[3]                                            ; WideOr17                       ; yes                    ;
-; in_ri[2]                                            ; WideOr17                       ; yes                    ;
-; in_ri[1]                                            ; WideOr17                       ; yes                    ;
-; in_ri[0]                                            ; WideOr17                       ; yes                    ;
-; posicion_actual[0]                                  ; posicion_actual                ; yes                    ;
-; posicion_actual[1]                                  ; posicion_actual                ; yes                    ;
-; posicion_actual[2]                                  ; posicion_actual                ; yes                    ;
-; posicion_actual[3]                                  ; posicion_actual                ; yes                    ;
-; posicion_actual[4]                                  ; posicion_actual                ; yes                    ;
-; posicion_actual[5]                                  ; posicion_actual                ; yes                    ;
-; Number of user-specified and inferred latches = 42  ;                                ;                        ;
-+-----------------------------------------------------+--------------------------------+------------------------+
++--------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                          ;
++-----------------------------------------------------+-------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal           ; Free of Timing Hazards ;
++-----------------------------------------------------+-------------------------------+------------------------+
+; salida[0]$latch                                     ; WideOr28                      ; yes                    ;
+; salida[1]$latch                                     ; WideOr28                      ; yes                    ;
+; salida[2]$latch                                     ; WideOr28                      ; yes                    ;
+; salida[3]$latch                                     ; WideOr28                      ; yes                    ;
+; salida[4]$latch                                     ; WideOr28                      ; yes                    ;
+; salida[5]$latch                                     ; WideOr28                      ; yes                    ;
+; salida[6]$latch                                     ; WideOr28                      ; yes                    ;
+; salida[7]$latch                                     ; WideOr28                      ; yes                    ;
+; in_ri[0]                                            ; WideOr27                      ; yes                    ;
+; in_op1[0]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_ri[1]                                            ; WideOr27                      ; yes                    ;
+; in_op1[1]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_ri[2]                                            ; WideOr27                      ; yes                    ;
+; in_op1[2]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_ri[3]                                            ; WideOr27                      ; yes                    ;
+; in_op1[3]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_ri[4]                                            ; WideOr27                      ; yes                    ;
+; in_op1[4]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_ri[5]                                            ; WideOr27                      ; yes                    ;
+; in_op1[5]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_ri[6]                                            ; WideOr27                      ; yes                    ;
+; in_op1[6]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_ri[7]                                            ; WideOr27                      ; yes                    ;
+; in_op1[7]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_ram[0]                                           ; WideOr26                      ; yes                    ;
+; posicion_ram[0]                                     ; WideOr25                      ; yes                    ;
+; posicion_ram[1]                                     ; WideOr25                      ; yes                    ;
+; posicion_ram[2]                                     ; WideOr25                      ; yes                    ;
+; posicion_ram[3]                                     ; WideOr25                      ; yes                    ;
+; posicion_ram[4]                                     ; WideOr25                      ; yes                    ;
+; posicion_ram[5]                                     ; WideOr25                      ; yes                    ;
+; in_ram[1]                                           ; WideOr26                      ; yes                    ;
+; in_ram[2]                                           ; WideOr26                      ; yes                    ;
+; in_ram[3]                                           ; WideOr26                      ; yes                    ;
+; in_ram[4]                                           ; WideOr26                      ; yes                    ;
+; in_ram[5]                                           ; WideOr26                      ; yes                    ;
+; in_ram[6]                                           ; WideOr26                      ; yes                    ;
+; in_ram[7]                                           ; WideOr26                      ; yes                    ;
+; in_data[0]                                          ; estadoSiguiente.escribir_data ; yes                    ;
+; in_data[1]                                          ; estadoSiguiente.escribir_data ; yes                    ;
+; in_data[2]                                          ; estadoSiguiente.escribir_data ; yes                    ;
+; in_data[3]                                          ; estadoSiguiente.escribir_data ; yes                    ;
+; in_data[4]                                          ; estadoSiguiente.escribir_data ; yes                    ;
+; in_data[5]                                          ; estadoSiguiente.escribir_data ; yes                    ;
+; in_data[6]                                          ; estadoSiguiente.escribir_data ; yes                    ;
+; in_data[7]                                          ; estadoSiguiente.escribir_data ; yes                    ;
+; in_pc[0]                                            ; WideOr24                      ; yes                    ;
+; in_pc[1]                                            ; WideOr24                      ; yes                    ;
+; in_pc[2]                                            ; WideOr24                      ; yes                    ;
+; in_pc[3]                                            ; WideOr24                      ; yes                    ;
+; in_pc[4]                                            ; WideOr24                      ; yes                    ;
+; in_pc[5]                                            ; WideOr24                      ; yes                    ;
+; posicion_actual[0]                                  ; WideOr25                      ; yes                    ;
+; posicion_actual[1]                                  ; WideOr25                      ; yes                    ;
+; posicion_actual[2]                                  ; WideOr25                      ; yes                    ;
+; posicion_actual[3]                                  ; WideOr25                      ; yes                    ;
+; posicion_actual[4]                                  ; WideOr25                      ; yes                    ;
+; posicion_actual[5]                                  ; WideOr25                      ; yes                    ;
+; posicion_actual[6]                                  ; WideOr25                      ; yes                    ;
+; posicion_actual[7]                                  ; WideOr25                      ; yes                    ;
+; in_pc[6]                                            ; WideOr24                      ; yes                    ;
+; in_pc[7]                                            ; WideOr24                      ; yes                    ;
+; Number of user-specified and inferred latches = 62  ;                               ;                        ;
++-----------------------------------------------------+-------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+------------------------------------------------------------+
-; Logic Cells Representing Combinational Loops               ;
-+--------------------------------------------------------+---+
-; Logic Cell Name                                        ;   ;
-+--------------------------------------------------------+---+
-; Selector10~0                                           ;   ;
-; Selector11~0                                           ;   ;
-; Selector8~0                                            ;   ;
-; Selector9~0                                            ;   ;
-; Selector5~0                                            ;   ;
-; Selector6~0                                            ;   ;
-; Number of logic cells representing combinational loops ; 6 ;
-+--------------------------------------------------------+---+
++-------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops                ;
++--------------------------------------------------------+----+
+; Logic Cell Name                                        ;    ;
++--------------------------------------------------------+----+
+; Selector5~0                                            ;    ;
+; Selector6~0                                            ;    ;
+; Selector14~0                                           ;    ;
+; Selector15~0                                           ;    ;
+; Selector10~0                                           ;    ;
+; Selector11~0                                           ;    ;
+; Selector12~0                                           ;    ;
+; Selector13~0                                           ;    ;
+; Selector8~0                                            ;    ;
+; Selector9~0                                            ;    ;
+; Number of logic cells representing combinational loops ; 10 ;
++--------------------------------------------------------+----+
 Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
@@ -352,6 +389,14 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; registro8b:r_pc|data_out[5]~en         ; Lost fanout        ;
 ; registro8b:r_pc|data_out[6]~en         ; Lost fanout        ;
 ; registro8b:r_pc|data_out[7]~en         ; Lost fanout        ;
+; registro8b:r_data|data_out[0]~en       ; Lost fanout        ;
+; registro8b:r_data|data_out[1]~en       ; Lost fanout        ;
+; registro8b:r_data|data_out[2]~en       ; Lost fanout        ;
+; registro8b:r_data|data_out[3]~en       ; Lost fanout        ;
+; registro8b:r_data|data_out[4]~en       ; Lost fanout        ;
+; registro8b:r_data|data_out[5]~en       ; Lost fanout        ;
+; registro8b:r_data|data_out[6]~en       ; Lost fanout        ;
+; registro8b:r_data|data_out[7]~en       ; Lost fanout        ;
 ; registro8b:r_ri|data_out[0]~en         ; Lost fanout        ;
 ; registro8b:r_ri|data_out[1]~en         ; Lost fanout        ;
 ; registro8b:r_ri|data_out[2]~en         ; Lost fanout        ;
@@ -360,21 +405,20 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; registro8b:r_ri|data_out[5]~en         ; Lost fanout        ;
 ; registro8b:r_ri|data_out[6]~en         ; Lost fanout        ;
 ; registro8b:r_ri|data_out[7]~en         ; Lost fanout        ;
-; registro8b:r_pc|data_out[7]~reg0       ; Lost fanout        ;
-; registro8b:r_pc|data_out[6]~reg0       ; Lost fanout        ;
-; registro8b:r_pc|registro[6,7]          ; Lost fanout        ;
-; Total Number of Removed Registers = 28 ;                    ;
+; registro8b:r_operador1|data_out[0]~en  ; Lost fanout        ;
+; registro8b:r_operador1|data_out[1]~en  ; Lost fanout        ;
+; registro8b:r_operador1|data_out[2]~en  ; Lost fanout        ;
+; registro8b:r_operador1|data_out[3]~en  ; Lost fanout        ;
+; registro8b:r_operador1|data_out[4]~en  ; Lost fanout        ;
+; registro8b:r_operador1|data_out[5]~en  ; Lost fanout        ;
+; registro8b:r_operador1|data_out[6]~en  ; Lost fanout        ;
+; registro8b:r_operador1|data_out[7]~en  ; Lost fanout        ;
+; estadoSiguiente.activar_esc_pc         ; Lost fanout        ;
+; estadoSiguiente.activar_esc_ram        ; Lost fanout        ;
+; estadoSiguiente.escribir_ri            ; Lost fanout        ;
+; estadoSiguiente.leer_data              ; Lost fanout        ;
+; Total Number of Removed Registers = 44 ;                    ;
 +----------------------------------------+--------------------+
-
-
-+------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                    ;
-+----------------------------------+--------------------+----------------------------------------+
-; Register name                    ; Reason for Removal ; Registers Removed due to This Register ;
-+----------------------------------+--------------------+----------------------------------------+
-; registro8b:r_pc|data_out[7]~reg0 ; Lost Fanouts       ; registro8b:r_pc|registro[7]            ;
-; registro8b:r_pc|data_out[6]~reg0 ; Lost Fanouts       ; registro8b:r_pc|registro[6]            ;
-+----------------------------------+--------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -382,12 +426,12 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 38    ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 83    ;
+; Number of registers using Synchronous Clear  ; 2     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 14    ;
+; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -516,15 +560,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "registro8b:r_operador1"                                                                 ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; Port     ; Type   ; Severity ; Details                                                                             ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-; data_out ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+----------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -540,114 +575,129 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Jan 23 19:11:38 2024
+    Info: Processing started: Mon Jan 29 18:15:03 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpu_nuevo -c cpu_nuevo
 Warning (20028): Parallel compilation is not licensed and has been disabled
-Info (12021): Found 2 design units, including 1 entities, in source file /a uader/d cuarto año/i diseño de sistemas digitales/proyects/registro8b/registro8b.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /arepos github/cpu_vhdl/registro8b/registro8b.vhd
     Info (12022): Found design unit 1: registro8b-estructural
     Info (12023): Found entity 1: registro8b
-Info (12021): Found 2 design units, including 1 entities, in source file /a uader/d cuarto año/i diseño de sistemas digitales/proyects/memoria8b/memoria8b.vhd
+Info (12021): Found 2 design units, including 1 entities, in source file /arepos github/cpu_vhdl/memoria8b/memoria8b.vhd
     Info (12022): Found design unit 1: memoria8b-estructural
     Info (12023): Found entity 1: memoria8b
 Info (12021): Found 2 design units, including 1 entities, in source file cpu_nuevo.vhd
     Info (12022): Found design unit 1: cpu_nuevo-cpu
     Info (12023): Found entity 1: cpu_nuevo
 Info (12127): Elaborating entity "cpu_nuevo" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at cpu_nuevo.vhd(24): object "out_op1" assigned a value but never read
 Warning (10541): VHDL Signal Declaration warning at cpu_nuevo.vhd(24): used implicit default value for signal "in_salida" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
 Warning (10036): Verilog HDL or VHDL warning at cpu_nuevo.vhd(25): object "out_salida" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(146): signal "en_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(147): signal "wr_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(148): signal "en_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(149): signal "wr_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(150): signal "en_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(151): signal "wr_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(152): signal "en_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(153): signal "wr_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(156): signal "en_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(157): signal "wr_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(192): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(193): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(198): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(202): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(226): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(236): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(246): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(252): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(297): signal "posicion_actual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "en_ri_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "wr_ri_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "en_salida_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "wr_salida_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "en_pc_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "wr_pc_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "en_ram_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "wr_ram_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "en_op1_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "wr_op1_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "posicion_ram", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "posicion_actual", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "in_ram", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "in_ri", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "in_op1", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(145): inferring latch(es) for signal or variable "in_pc", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "in_pc[0]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_pc[1]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_pc[2]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_pc[3]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_pc[4]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_pc[5]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_pc[6]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_pc[7]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "salida[0]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "salida[1]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "salida[2]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "salida[3]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "salida[4]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "salida[5]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "salida[6]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "salida[7]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_op1[0]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_op1[1]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_op1[2]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_op1[3]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_op1[4]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_op1[5]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_op1[6]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_op1[7]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ri[0]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ri[1]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ri[2]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ri[3]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ri[4]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ri[5]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ri[6]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ri[7]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ram[0]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ram[1]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ram[2]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ram[3]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ram[4]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ram[5]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ram[6]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "in_ram[7]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_actual[0]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_actual[1]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_actual[2]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_actual[3]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_actual[4]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_actual[5]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_actual[6]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_actual[7]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_ram[0]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_ram[1]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_ram[2]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_ram[3]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_ram[4]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_ram[5]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_ram[6]" at cpu_nuevo.vhd(145)
-Info (10041): Inferred latch for "posicion_ram[7]" at cpu_nuevo.vhd(145)
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(153): signal "en_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(154): signal "wr_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(155): signal "en_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(156): signal "wr_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(157): signal "en_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(158): signal "wr_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(159): signal "en_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(160): signal "wr_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(161): signal "en_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(162): signal "wr_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(163): signal "en_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(164): signal "wr_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(210): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(212): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(213): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(221): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(223): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(224): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(235): signal "out_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(261): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(264): signal "out_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(277): signal "out_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(287): signal "posicion_actual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(288): signal "posicion_actual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "en_ri_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "wr_ri_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "en_salida_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "wr_salida_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "en_pc_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "wr_pc_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "en_ram_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "wr_ram_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "en_data_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "wr_data_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "en_op1_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "wr_op1_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "in_pc", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "posicion_ram", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "posicion_actual", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "in_ram", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "in_ri", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "in_data", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(152): inferring latch(es) for signal or variable "in_op1", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "in_op1[0]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_op1[1]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_op1[2]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_op1[3]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_op1[4]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_op1[5]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_op1[6]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_op1[7]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_data[0]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_data[1]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_data[2]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_data[3]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_data[4]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_data[5]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_data[6]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_data[7]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "salida[0]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "salida[1]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "salida[2]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "salida[3]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "salida[4]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "salida[5]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "salida[6]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "salida[7]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ri[0]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ri[1]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ri[2]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ri[3]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ri[4]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ri[5]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ri[6]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ri[7]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ram[0]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ram[1]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ram[2]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ram[3]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ram[4]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ram[5]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ram[6]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_ram[7]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_actual[0]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_actual[1]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_actual[2]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_actual[3]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_actual[4]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_actual[5]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_actual[6]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_actual[7]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_ram[0]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_ram[1]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_ram[2]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_ram[3]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_ram[4]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_ram[5]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_ram[6]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "posicion_ram[7]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_pc[0]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_pc[1]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_pc[2]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_pc[3]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_pc[4]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_pc[5]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_pc[6]" at cpu_nuevo.vhd(152)
+Info (10041): Inferred latch for "in_pc[7]" at cpu_nuevo.vhd(152)
 Info (12128): Elaborating entity "registro8b" for hierarchy "registro8b:r_operador1"
 Info (12128): Elaborating entity "memoria8b" for hierarchy "memoria8b:r_ram"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
@@ -675,6 +725,14 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "registro8b:r_pc|data_out[5]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_pc|data_out[6]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_pc|data_out[7]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_data|data_out[0]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_data|data_out[1]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_data|data_out[2]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_data|data_out[3]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_data|data_out[4]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_data|data_out[5]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_data|data_out[6]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_data|data_out[7]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_ri|data_out[0]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_ri|data_out[1]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_ri|data_out[2]" feeding internal logic into a wire
@@ -683,6 +741,14 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "registro8b:r_ri|data_out[5]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_ri|data_out[6]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_ri|data_out[7]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_operador1|data_out[0]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_operador1|data_out[1]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_operador1|data_out[2]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_operador1|data_out[3]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_operador1|data_out[4]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_operador1|data_out[5]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_operador1|data_out[6]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_operador1|data_out[7]" feeding internal logic into a wire
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "memoria8b:r_ram|ram_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -721,6 +787,57 @@ Info (12133): Instantiated megafunction "memoria8b:r_ram|altsyncram:ram_rtl_0" w
     Info (12134): Parameter "READ_DURING_WRITE_MODE_MIXED_PORTS" = "OLD_DATA"
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_kml1.tdf
     Info (12023): Found entity 1: altsyncram_kml1
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "posicion_actual[0]" merged with LATCH primitive "posicion_ram[0]"
+    Info (13026): Duplicate LATCH primitive "posicion_actual[1]" merged with LATCH primitive "posicion_ram[1]"
+    Info (13026): Duplicate LATCH primitive "posicion_actual[2]" merged with LATCH primitive "posicion_ram[2]"
+    Info (13026): Duplicate LATCH primitive "posicion_actual[3]" merged with LATCH primitive "posicion_ram[3]"
+    Info (13026): Duplicate LATCH primitive "posicion_actual[4]" merged with LATCH primitive "posicion_ram[4]"
+    Info (13026): Duplicate LATCH primitive "posicion_actual[5]" merged with LATCH primitive "posicion_ram[5]"
+Warning (13012): Latch salida[0]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.mostrar_salida
+Warning (13012): Latch salida[1]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.mostrar_salida
+Warning (13012): Latch salida[2]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.mostrar_salida
+Warning (13012): Latch salida[3]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.mostrar_salida
+Warning (13012): Latch salida[4]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.mostrar_salida
+Warning (13012): Latch salida[5]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.mostrar_salida
+Warning (13012): Latch salida[6]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.mostrar_salida
+Warning (13012): Latch salida[7]$latch has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.mostrar_salida
+Warning (13012): Latch in_ri[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_op1
+Warning (13012): Latch in_ri[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_op1
+Warning (13012): Latch in_ri[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_op1
+Warning (13012): Latch in_ri[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_op1
+Warning (13012): Latch in_ri[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_op1
+Warning (13012): Latch in_ri[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_op1
+Warning (13012): Latch in_ri[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_op1
+Warning (13012): Latch in_ri[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_op1
+Warning (13012): Latch posicion_ram[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_ram
+Warning (13012): Latch posicion_ram[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_ram
+Warning (13012): Latch posicion_ram[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_ram
+Warning (13012): Latch posicion_ram[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_ram
+Warning (13012): Latch posicion_ram[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_ram
+Warning (13012): Latch posicion_ram[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_ram
 Warning (13012): Latch in_pc[0] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.incrementar_pc
 Warning (13012): Latch in_pc[1] has unsafe behavior
@@ -733,34 +850,26 @@ Warning (13012): Latch in_pc[4] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.incrementar_pc
 Warning (13012): Latch in_pc[5] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.incrementar_pc
-Warning (13012): Latch in_ri[7] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.cargar_op1
-Warning (13012): Latch in_ri[6] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.cargar_op1
-Warning (13012): Latch in_ri[5] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.cargar_op1
-Warning (13012): Latch in_ri[4] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.cargar_op1
-Warning (13012): Latch in_ri[3] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.cargar_op1
-Warning (13012): Latch in_ri[2] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.cargar_op1
-Warning (13012): Latch in_ri[1] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.cargar_op1
-Warning (13012): Latch in_ri[0] has unsafe behavior
-    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.cargar_op1
-Info (17049): 28 registers lost all their fanouts during netlist optimizations.
+Warning (13012): Latch posicion_actual[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_ram
+Warning (13012): Latch posicion_actual[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.escribir_ram
+Warning (13012): Latch in_pc[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.incrementar_pc
+Warning (13012): Latch in_pc[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.incrementar_pc
+Info (17049): 44 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 149 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 235 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 122 logic cells
+    Info (21061): Implemented 208 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 101 warnings
-    Info: Peak virtual memory: 4640 megabytes
-    Info: Processing ended: Tue Jan 23 19:11:42 2024
-    Info: Elapsed time: 00:00:04
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 160 warnings
+    Info: Peak virtual memory: 4651 megabytes
+    Info: Processing ended: Mon Jan 29 18:15:05 2024
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 
