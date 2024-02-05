@@ -1,5 +1,5 @@
 Analysis & Synthesis report for cpu_nuevo
-Tue Jan 30 18:36:23 2024
+Mon Feb 05 18:47:09 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -25,8 +25,9 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  17. Parameter Settings for Inferred Entity Instance: memoria8b:r_ram|altsyncram:ram_rtl_0
  18. altsyncram Parameter Settings by Entity Instance
  19. Port Connectivity Checks: "registro8b:r_salida"
- 20. Elapsed Time Per Partition
- 21. Analysis & Synthesis Messages
+ 20. Port Connectivity Checks: "registro8b:r_status"
+ 21. Elapsed Time Per Partition
+ 22. Analysis & Synthesis Messages
 
 
 
@@ -52,15 +53,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jan 30 18:36:22 2024           ;
+; Analysis & Synthesis Status        ; Successful - Mon Feb 05 18:47:09 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; cpu_nuevo                                       ;
 ; Top-level Entity Name              ; cpu_nuevo                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 211                                             ;
-;     Total combinational functions  ; 171                                             ;
-;     Dedicated logic registers      ; 104                                             ;
-; Total registers                    ; 104                                             ;
+; Total logic elements               ; 259                                             ;
+;     Total combinational functions  ; 202                                             ;
+;     Dedicated logic registers      ; 136                                             ;
+; Total registers                    ; 136                                             ;
 ; Total pins                         ; 19                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 512                                             ;
@@ -170,6 +171,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path             ; Used in Netlist ; File Type                                             ; File Name with Absolute Path                                                    ; Library ;
 +----------------------------------------------+-----------------+-------------------------------------------------------+---------------------------------------------------------------------------------+---------+
+; ../alu/alu.vhd                               ; yes             ; User VHDL File                                        ; Z:/aRepos GitHub/cpu_vhdl/alu/alu.vhd                                           ;         ;
 ; ../registro8b/registro8b.vhd                 ; yes             ; User VHDL File                                        ; Z:/aRepos GitHub/cpu_vhdl/registro8b/registro8b.vhd                             ;         ;
 ; ../memoria8b/memoria8b.vhd                   ; yes             ; User VHDL File                                        ; Z:/aRepos GitHub/cpu_vhdl/memoria8b/memoria8b.vhd                               ;         ;
 ; cpu_nuevo.vhd                                ; yes             ; User VHDL File                                        ; Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd                                ;         ;
@@ -192,29 +194,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 211        ;
+; Estimated Total logic elements              ; 259        ;
 ;                                             ;            ;
-; Total combinational functions               ; 171        ;
+; Total combinational functions               ; 202        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 30         ;
-;     -- 3 input functions                    ; 99         ;
-;     -- <=2 input functions                  ; 42         ;
+;     -- 4 input functions                    ; 27         ;
+;     -- 3 input functions                    ; 117        ;
+;     -- <=2 input functions                  ; 58         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 164        ;
-;     -- arithmetic mode                      ; 7          ;
+;     -- normal mode                          ; 187        ;
+;     -- arithmetic mode                      ; 15         ;
 ;                                             ;            ;
-; Total registers                             ; 104        ;
-;     -- Dedicated logic registers            ; 104        ;
+; Total registers                             ; 136        ;
+;     -- Dedicated logic registers            ; 136        ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
 ; I/O pins                                    ; 19         ;
 ; Total memory bits                           ; 512        ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ; Maximum fan-out node                        ; control[0] ;
-; Maximum fan-out                             ; 112        ;
-; Total fan-out                               ; 830        ;
-; Average fan-out                             ; 2.75       ;
+; Maximum fan-out                             ; 144        ;
+; Total fan-out                               ; 994        ;
+; Average fan-out                             ; 2.72       ;
 +---------------------------------------------+------------+
 
 
@@ -223,7 +225,8 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                            ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
-; |cpu_nuevo                                ; 171 (165)         ; 104 (24)     ; 512         ; 0            ; 0       ; 0         ; 19   ; 0            ; |cpu_nuevo                                                                     ; work         ;
+; |cpu_nuevo                                ; 202 (170)         ; 136 (32)     ; 512         ; 0            ; 0       ; 0         ; 19   ; 0            ; |cpu_nuevo                                                                     ; work         ;
+;    |alu:modulo_alu|                       ; 25 (25)           ; 8 (8)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|alu:modulo_alu                                                      ; work         ;
 ;    |memoria8b:r_ram|                      ; 1 (1)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|memoria8b:r_ram                                                     ; work         ;
 ;       |altsyncram:ram_rtl_0|              ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|memoria8b:r_ram|altsyncram:ram_rtl_0                                ; work         ;
 ;          |altsyncram_kml1:auto_generated| ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|memoria8b:r_ram|altsyncram:ram_rtl_0|altsyncram_kml1:auto_generated ; work         ;
@@ -231,6 +234,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 ;    |registro8b:r_operador1|               ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|registro8b:r_operador1                                              ; work         ;
 ;    |registro8b:r_operador2|               ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|registro8b:r_operador2                                              ; work         ;
 ;    |registro8b:r_pc|                      ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|registro8b:r_pc                                                     ; work         ;
+;    |registro8b:r_resultado|               ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|registro8b:r_resultado                                              ; work         ;
 ;    |registro8b:r_ri|                      ; 1 (1)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|registro8b:r_ri                                                     ; work         ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -246,39 +250,48 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 
 
 Encoding Type:  One-Hot
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |cpu_nuevo|estadoSiguiente                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     ;
-+-----------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+---------------------------+-------------------------------+-----------------------------------+----------------------------------+--------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+-----------------------------+-------------------------+--------------------------------+---------------------------------+--------------------------------+--------------------------+---------------------------------+----------------------------------+------------------------------+------------------------+--------------------------+--------------------------------+---------------------------------+------------------------+
-; Name                              ; estadoSiguiente.leer_op2 ; estadoSiguiente.escribir_op2 ; estadoSiguiente.activar_esc_op2 ; estadoSiguiente.activar_leer_op2 ; estadoSiguiente.leer_data ; estadoSiguiente.escribir_data ; estadoSiguiente.activar_leer_data ; estadoSiguiente.activar_esc_data ; estadoSiguiente.incrementar_pc ; estadoSiguiente.leer_op1 ; estadoSiguiente.escribir_op1 ; estadoSiguiente.activar_esc_op1 ; estadoSiguiente.activar_leer_op1 ; estadoSiguiente.escribir_ri ; estadoSiguiente.leer_ri ; estadoSiguiente.activar_esc_ri ; estadoSiguiente.activar_leer_ri ; estadoSiguiente.mostrar_salida ; estadoSiguiente.leer_ram ; estadoSiguiente.activar_esc_ram ; estadoSiguiente.activar_leer_ram ; estadoSiguiente.escribir_ram ; estadoSiguiente.espera ; estadoSiguiente.reset_pc ; estadoSiguiente.activar_esc_pc ; estadoSiguiente.activar_leer_pc ; estadoSiguiente.inicio ;
-+-----------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+---------------------------+-------------------------------+-----------------------------------+----------------------------------+--------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+-----------------------------+-------------------------+--------------------------------+---------------------------------+--------------------------------+--------------------------+---------------------------------+----------------------------------+------------------------------+------------------------+--------------------------+--------------------------------+---------------------------------+------------------------+
-; estadoSiguiente.inicio            ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 0                      ;
-; estadoSiguiente.activar_leer_pc   ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 1                               ; 1                      ;
-; estadoSiguiente.activar_esc_pc    ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 1                              ; 0                               ; 1                      ;
-; estadoSiguiente.reset_pc          ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 1                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.espera            ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 1                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.escribir_ram      ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 1                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.activar_leer_ram  ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 1                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.activar_esc_ram   ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 1                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.leer_ram          ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 1                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.mostrar_salida    ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 1                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.activar_leer_ri   ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 1                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.activar_esc_ri    ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 1                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.leer_ri           ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 1                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.escribir_ri       ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 1                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.activar_leer_op1  ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 1                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.activar_esc_op1   ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 1                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.escribir_op1      ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 1                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.leer_op1          ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 1                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.incrementar_pc    ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 1                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.activar_esc_data  ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 1                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.activar_leer_data ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 1                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.escribir_data     ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 1                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.leer_data         ; 0                        ; 0                            ; 0                               ; 0                                ; 1                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.activar_leer_op2  ; 0                        ; 0                            ; 0                               ; 1                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.activar_esc_op2   ; 0                        ; 0                            ; 1                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.escribir_op2      ; 0                        ; 1                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-; estadoSiguiente.leer_op2          ; 1                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
-+-----------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+---------------------------+-------------------------------+-----------------------------------+----------------------------------+--------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+-----------------------------+-------------------------+--------------------------------+---------------------------------+--------------------------------+--------------------------+---------------------------------+----------------------------------+------------------------------+------------------------+--------------------------+--------------------------------+---------------------------------+------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |cpu_nuevo|estadoSiguiente                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ;
++----------------------------------------+-----------------------------+---------------------------------+-------------------------------------+------------------------------------+--------------------------------+------------------------------------+----------------------------------------+---------------------------------------+-----------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+---------------------------+-------------------------------+-----------------------------------+----------------------------------+--------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+-----------------------------+-------------------------+--------------------------------+---------------------------------+--------------------------------+--------------------------+---------------------------------+----------------------------------+------------------------------+------------------------+--------------------------+--------------------------------+---------------------------------+------------------------+
+; Name                                   ; estadoSiguiente.leer_status ; estadoSiguiente.escribir_status ; estadoSiguiente.activar_leer_status ; estadoSiguiente.activar_esc_status ; estadoSiguiente.leer_resultado ; estadoSiguiente.escribir_resultado ; estadoSiguiente.activar_leer_resultado ; estadoSiguiente.activar_esc_resultado ; estadoSiguiente.activar_carga_alu ; estadoSiguiente.leer_op2 ; estadoSiguiente.escribir_op2 ; estadoSiguiente.activar_esc_op2 ; estadoSiguiente.activar_leer_op2 ; estadoSiguiente.leer_data ; estadoSiguiente.escribir_data ; estadoSiguiente.activar_leer_data ; estadoSiguiente.activar_esc_data ; estadoSiguiente.incrementar_pc ; estadoSiguiente.leer_op1 ; estadoSiguiente.escribir_op1 ; estadoSiguiente.activar_esc_op1 ; estadoSiguiente.activar_leer_op1 ; estadoSiguiente.escribir_ri ; estadoSiguiente.leer_ri ; estadoSiguiente.activar_esc_ri ; estadoSiguiente.activar_leer_ri ; estadoSiguiente.mostrar_salida ; estadoSiguiente.leer_ram ; estadoSiguiente.activar_esc_ram ; estadoSiguiente.activar_leer_ram ; estadoSiguiente.escribir_ram ; estadoSiguiente.espera ; estadoSiguiente.reset_pc ; estadoSiguiente.activar_esc_pc ; estadoSiguiente.activar_leer_pc ; estadoSiguiente.inicio ;
++----------------------------------------+-----------------------------+---------------------------------+-------------------------------------+------------------------------------+--------------------------------+------------------------------------+----------------------------------------+---------------------------------------+-----------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+---------------------------+-------------------------------+-----------------------------------+----------------------------------+--------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+-----------------------------+-------------------------+--------------------------------+---------------------------------+--------------------------------+--------------------------+---------------------------------+----------------------------------+------------------------------+------------------------+--------------------------+--------------------------------+---------------------------------+------------------------+
+; estadoSiguiente.inicio                 ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 0                      ;
+; estadoSiguiente.activar_leer_pc        ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 1                               ; 1                      ;
+; estadoSiguiente.activar_esc_pc         ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 1                              ; 0                               ; 1                      ;
+; estadoSiguiente.reset_pc               ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 1                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.espera                 ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 1                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.escribir_ram           ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 1                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_leer_ram       ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 1                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_esc_ram        ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 1                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.leer_ram               ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 1                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.mostrar_salida         ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 1                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_leer_ri        ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 1                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_esc_ri         ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 1                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.leer_ri                ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 1                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.escribir_ri            ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 1                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_leer_op1       ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 1                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_esc_op1        ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 1                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.escribir_op1           ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 1                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.leer_op1               ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 1                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.incrementar_pc         ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 1                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_esc_data       ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 1                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_leer_data      ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 1                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.escribir_data          ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 1                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.leer_data              ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 1                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_leer_op2       ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 1                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_esc_op2        ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 1                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.escribir_op2           ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 1                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.leer_op2               ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 1                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_carga_alu      ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 1                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_esc_resultado  ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 1                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_leer_resultado ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 1                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.escribir_resultado     ; 0                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 1                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.leer_resultado         ; 0                           ; 0                               ; 0                                   ; 0                                  ; 1                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_esc_status     ; 0                           ; 0                               ; 0                                   ; 1                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.activar_leer_status    ; 0                           ; 0                               ; 1                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.escribir_status        ; 0                           ; 1                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
+; estadoSiguiente.leer_status            ; 1                           ; 0                               ; 0                                   ; 0                                  ; 0                              ; 0                                  ; 0                                      ; 0                                     ; 0                                 ; 0                        ; 0                            ; 0                               ; 0                                ; 0                         ; 0                             ; 0                                 ; 0                                ; 0                              ; 0                        ; 0                            ; 0                               ; 0                                ; 0                           ; 0                       ; 0                              ; 0                               ; 0                              ; 0                        ; 0                               ; 0                                ; 0                            ; 0                      ; 0                        ; 0                              ; 0                               ; 1                      ;
++----------------------------------------+-----------------------------+---------------------------------+-------------------------------------+------------------------------------+--------------------------------+------------------------------------+----------------------------------------+---------------------------------------+-----------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+---------------------------+-------------------------------+-----------------------------------+----------------------------------+--------------------------------+--------------------------+------------------------------+---------------------------------+----------------------------------+-----------------------------+-------------------------+--------------------------------+---------------------------------+--------------------------------+--------------------------+---------------------------------+----------------------------------+------------------------------+------------------------+--------------------------+--------------------------------+---------------------------------+------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------+
@@ -286,52 +299,66 @@ Encoding Type:  One-Hot
 +-----------------------------------------------------+-------------------------------+------------------------+
 ; Latch Name                                          ; Latch Enable Signal           ; Free of Timing Hazards ;
 +-----------------------------------------------------+-------------------------------+------------------------+
-; salida[0]$latch                                     ; WideOr33                      ; yes                    ;
-; salida[1]$latch                                     ; WideOr33                      ; yes                    ;
-; salida[2]$latch                                     ; WideOr33                      ; yes                    ;
-; salida[3]$latch                                     ; WideOr33                      ; yes                    ;
-; salida[4]$latch                                     ; WideOr33                      ; yes                    ;
-; salida[5]$latch                                     ; WideOr33                      ; yes                    ;
-; salida[6]$latch                                     ; WideOr33                      ; yes                    ;
-; salida[7]$latch                                     ; WideOr33                      ; yes                    ;
-; in_ri[0]                                            ; WideOr32                      ; yes                    ;
-; in_op1[0]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; salida[0]$latch                                     ; WideOr42                      ; yes                    ;
+; salida[1]$latch                                     ; WideOr42                      ; yes                    ;
+; salida[2]$latch                                     ; WideOr42                      ; yes                    ;
+; salida[3]$latch                                     ; WideOr42                      ; yes                    ;
+; salida[4]$latch                                     ; WideOr42                      ; yes                    ;
+; salida[5]$latch                                     ; WideOr42                      ; yes                    ;
+; salida[6]$latch                                     ; WideOr42                      ; yes                    ;
+; salida[7]$latch                                     ; WideOr42                      ; yes                    ;
+; in_ri[0]                                            ; WideOr41                      ; yes                    ;
+; in_ri[1]                                            ; WideOr41                      ; yes                    ;
+; in_ri[2]                                            ; WideOr41                      ; yes                    ;
+; in_ri[3]                                            ; WideOr41                      ; yes                    ;
+; in_ri[4]                                            ; WideOr41                      ; yes                    ;
+; in_ri[5]                                            ; WideOr41                      ; yes                    ;
+; in_ri[6]                                            ; WideOr41                      ; yes                    ;
+; in_ri[7]                                            ; WideOr41                      ; yes                    ;
+; in_ram[0]                                           ; WideOr40                      ; yes                    ;
+; posicion_ram[0]                                     ; WideOr39                      ; yes                    ;
+; posicion_ram[1]                                     ; WideOr39                      ; yes                    ;
+; posicion_ram[2]                                     ; WideOr39                      ; yes                    ;
+; posicion_ram[3]                                     ; WideOr39                      ; yes                    ;
+; posicion_ram[4]                                     ; WideOr39                      ; yes                    ;
+; posicion_ram[5]                                     ; WideOr39                      ; yes                    ;
+; in_ram[1]                                           ; WideOr40                      ; yes                    ;
+; in_ram[2]                                           ; WideOr40                      ; yes                    ;
+; in_ram[3]                                           ; WideOr40                      ; yes                    ;
+; in_ram[4]                                           ; WideOr40                      ; yes                    ;
+; in_ram[5]                                           ; WideOr40                      ; yes                    ;
+; in_ram[6]                                           ; WideOr40                      ; yes                    ;
+; in_ram[7]                                           ; WideOr40                      ; yes                    ;
 ; in_op2[0]                                           ; estadoSiguiente.escribir_op2  ; yes                    ;
-; in_ri[1]                                            ; WideOr32                      ; yes                    ;
-; in_op1[1]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_op1[0]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
 ; in_op2[1]                                           ; estadoSiguiente.escribir_op2  ; yes                    ;
-; in_ri[2]                                            ; WideOr32                      ; yes                    ;
-; in_op1[2]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_op1[1]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
 ; in_op2[2]                                           ; estadoSiguiente.escribir_op2  ; yes                    ;
-; in_ri[3]                                            ; WideOr32                      ; yes                    ;
-; in_op1[3]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_op1[2]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
 ; in_op2[3]                                           ; estadoSiguiente.escribir_op2  ; yes                    ;
-; in_ri[4]                                            ; WideOr32                      ; yes                    ;
-; in_op1[4]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_op1[3]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
 ; in_op2[4]                                           ; estadoSiguiente.escribir_op2  ; yes                    ;
-; in_ri[5]                                            ; WideOr32                      ; yes                    ;
-; in_op1[5]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_op1[4]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
 ; in_op2[5]                                           ; estadoSiguiente.escribir_op2  ; yes                    ;
-; in_ri[6]                                            ; WideOr32                      ; yes                    ;
-; in_op1[6]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_op1[5]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
 ; in_op2[6]                                           ; estadoSiguiente.escribir_op2  ; yes                    ;
-; in_ri[7]                                            ; WideOr32                      ; yes                    ;
-; in_op1[7]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_op1[6]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
 ; in_op2[7]                                           ; estadoSiguiente.escribir_op2  ; yes                    ;
-; in_ram[0]                                           ; WideOr31                      ; yes                    ;
-; posicion_ram[0]                                     ; WideOr30                      ; yes                    ;
-; posicion_ram[1]                                     ; WideOr30                      ; yes                    ;
-; posicion_ram[2]                                     ; WideOr30                      ; yes                    ;
-; posicion_ram[3]                                     ; WideOr30                      ; yes                    ;
-; posicion_ram[4]                                     ; WideOr30                      ; yes                    ;
-; posicion_ram[5]                                     ; WideOr30                      ; yes                    ;
-; in_ram[1]                                           ; WideOr31                      ; yes                    ;
-; in_ram[2]                                           ; WideOr31                      ; yes                    ;
-; in_ram[3]                                           ; WideOr31                      ; yes                    ;
-; in_ram[4]                                           ; WideOr31                      ; yes                    ;
-; in_ram[5]                                           ; WideOr31                      ; yes                    ;
-; in_ram[6]                                           ; WideOr31                      ; yes                    ;
-; in_ram[7]                                           ; WideOr31                      ; yes                    ;
+; in_op1[7]                                           ; estadoSiguiente.escribir_op1  ; yes                    ;
+; in_pc[0]                                            ; WideOr38                      ; yes                    ;
+; in_pc[1]                                            ; WideOr38                      ; yes                    ;
+; in_pc[2]                                            ; WideOr38                      ; yes                    ;
+; in_pc[3]                                            ; WideOr38                      ; yes                    ;
+; in_pc[4]                                            ; WideOr38                      ; yes                    ;
+; in_pc[5]                                            ; WideOr38                      ; yes                    ;
+; posicion_actual[0]                                  ; WideOr39                      ; yes                    ;
+; posicion_actual[1]                                  ; WideOr39                      ; yes                    ;
+; posicion_actual[2]                                  ; WideOr39                      ; yes                    ;
+; posicion_actual[3]                                  ; WideOr39                      ; yes                    ;
+; posicion_actual[4]                                  ; WideOr39                      ; yes                    ;
+; posicion_actual[5]                                  ; WideOr39                      ; yes                    ;
+; posicion_actual[6]                                  ; WideOr39                      ; yes                    ;
+; posicion_actual[7]                                  ; WideOr39                      ; yes                    ;
 ; in_data[0]                                          ; estadoSiguiente.escribir_data ; yes                    ;
 ; in_data[1]                                          ; estadoSiguiente.escribir_data ; yes                    ;
 ; in_data[2]                                          ; estadoSiguiente.escribir_data ; yes                    ;
@@ -340,22 +367,8 @@ Encoding Type:  One-Hot
 ; in_data[5]                                          ; estadoSiguiente.escribir_data ; yes                    ;
 ; in_data[6]                                          ; estadoSiguiente.escribir_data ; yes                    ;
 ; in_data[7]                                          ; estadoSiguiente.escribir_data ; yes                    ;
-; in_pc[0]                                            ; WideOr29                      ; yes                    ;
-; in_pc[1]                                            ; WideOr29                      ; yes                    ;
-; in_pc[2]                                            ; WideOr29                      ; yes                    ;
-; in_pc[3]                                            ; WideOr29                      ; yes                    ;
-; in_pc[4]                                            ; WideOr29                      ; yes                    ;
-; in_pc[5]                                            ; WideOr29                      ; yes                    ;
-; posicion_actual[0]                                  ; WideOr30                      ; yes                    ;
-; posicion_actual[1]                                  ; WideOr30                      ; yes                    ;
-; posicion_actual[2]                                  ; WideOr30                      ; yes                    ;
-; posicion_actual[3]                                  ; WideOr30                      ; yes                    ;
-; posicion_actual[4]                                  ; WideOr30                      ; yes                    ;
-; posicion_actual[5]                                  ; WideOr30                      ; yes                    ;
-; posicion_actual[6]                                  ; WideOr30                      ; yes                    ;
-; posicion_actual[7]                                  ; WideOr30                      ; yes                    ;
-; in_pc[6]                                            ; WideOr29                      ; yes                    ;
-; in_pc[7]                                            ; WideOr29                      ; yes                    ;
+; in_pc[6]                                            ; WideOr38                      ; yes                    ;
+; in_pc[7]                                            ; WideOr38                      ; yes                    ;
 ; Number of user-specified and inferred latches = 70  ;                               ;                        ;
 +-----------------------------------------------------+-------------------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -366,82 +379,104 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------------------------------------------+----+
 ; Logic Cell Name                                        ;    ;
 +--------------------------------------------------------+----+
-; Selector3~0                                            ;    ;
-; Selector4~0                                            ;    ;
-; Selector12~0                                           ;    ;
-; Selector13~0                                           ;    ;
-; Selector14~0                                           ;    ;
-; Selector15~0                                           ;    ;
 ; Selector8~0                                            ;    ;
 ; Selector9~0                                            ;    ;
-; Selector10~0                                           ;    ;
+; Selector17~0                                           ;    ;
+; Selector18~0                                           ;    ;
+; Selector13~0                                           ;    ;
+; Selector14~0                                           ;    ;
+; Selector21~0                                           ;    ;
+; Selector22~0                                           ;    ;
+; Selector19~0                                           ;    ;
+; Selector20~0                                           ;    ;
 ; Selector11~0                                           ;    ;
-; Selector6~0                                            ;    ;
-; Selector7~0                                            ;    ;
-; Number of logic cells representing combinational loops ; 12 ;
+; Selector12~0                                           ;    ;
+; Selector15~0                                           ;    ;
+; Selector16~0                                           ;    ;
+; Number of logic cells representing combinational loops ; 14 ;
 +--------------------------------------------------------+----+
 Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+-------------------------------------------------------------+
-; Registers Removed During Synthesis                          ;
-+----------------------------------------+--------------------+
-; Register name                          ; Reason for Removal ;
-+----------------------------------------+--------------------+
-; memoria8b:r_ram|data_out[0]~en         ; Lost fanout        ;
-; memoria8b:r_ram|data_out[1]~en         ; Lost fanout        ;
-; memoria8b:r_ram|data_out[2]~en         ; Lost fanout        ;
-; memoria8b:r_ram|data_out[3]~en         ; Lost fanout        ;
-; memoria8b:r_ram|data_out[4]~en         ; Lost fanout        ;
-; memoria8b:r_ram|data_out[5]~en         ; Lost fanout        ;
-; memoria8b:r_ram|data_out[6]~en         ; Lost fanout        ;
-; memoria8b:r_ram|data_out[7]~en         ; Lost fanout        ;
-; registro8b:r_pc|data_out[0]~en         ; Lost fanout        ;
-; registro8b:r_pc|data_out[1]~en         ; Lost fanout        ;
-; registro8b:r_pc|data_out[2]~en         ; Lost fanout        ;
-; registro8b:r_pc|data_out[3]~en         ; Lost fanout        ;
-; registro8b:r_pc|data_out[4]~en         ; Lost fanout        ;
-; registro8b:r_pc|data_out[5]~en         ; Lost fanout        ;
-; registro8b:r_pc|data_out[6]~en         ; Lost fanout        ;
-; registro8b:r_pc|data_out[7]~en         ; Lost fanout        ;
-; registro8b:r_data|data_out[0]~en       ; Lost fanout        ;
-; registro8b:r_data|data_out[1]~en       ; Lost fanout        ;
-; registro8b:r_data|data_out[2]~en       ; Lost fanout        ;
-; registro8b:r_data|data_out[3]~en       ; Lost fanout        ;
-; registro8b:r_data|data_out[4]~en       ; Lost fanout        ;
-; registro8b:r_data|data_out[5]~en       ; Lost fanout        ;
-; registro8b:r_data|data_out[6]~en       ; Lost fanout        ;
-; registro8b:r_data|data_out[7]~en       ; Lost fanout        ;
-; registro8b:r_ri|data_out[0]~en         ; Lost fanout        ;
-; registro8b:r_ri|data_out[1]~en         ; Lost fanout        ;
-; registro8b:r_ri|data_out[2]~en         ; Lost fanout        ;
-; registro8b:r_ri|data_out[3]~en         ; Lost fanout        ;
-; registro8b:r_ri|data_out[4]~en         ; Lost fanout        ;
-; registro8b:r_ri|data_out[5]~en         ; Lost fanout        ;
-; registro8b:r_ri|data_out[6]~en         ; Lost fanout        ;
-; registro8b:r_ri|data_out[7]~en         ; Lost fanout        ;
-; registro8b:r_operador2|data_out[0]~en  ; Lost fanout        ;
-; registro8b:r_operador2|data_out[1]~en  ; Lost fanout        ;
-; registro8b:r_operador2|data_out[2]~en  ; Lost fanout        ;
-; registro8b:r_operador2|data_out[3]~en  ; Lost fanout        ;
-; registro8b:r_operador2|data_out[4]~en  ; Lost fanout        ;
-; registro8b:r_operador2|data_out[5]~en  ; Lost fanout        ;
-; registro8b:r_operador2|data_out[6]~en  ; Lost fanout        ;
-; registro8b:r_operador2|data_out[7]~en  ; Lost fanout        ;
-; registro8b:r_operador1|data_out[0]~en  ; Lost fanout        ;
-; registro8b:r_operador1|data_out[1]~en  ; Lost fanout        ;
-; registro8b:r_operador1|data_out[2]~en  ; Lost fanout        ;
-; registro8b:r_operador1|data_out[3]~en  ; Lost fanout        ;
-; registro8b:r_operador1|data_out[4]~en  ; Lost fanout        ;
-; registro8b:r_operador1|data_out[5]~en  ; Lost fanout        ;
-; registro8b:r_operador1|data_out[6]~en  ; Lost fanout        ;
-; registro8b:r_operador1|data_out[7]~en  ; Lost fanout        ;
-; estadoSiguiente.activar_esc_pc         ; Lost fanout        ;
-; estadoSiguiente.activar_esc_ram        ; Lost fanout        ;
-; estadoSiguiente.escribir_ri            ; Lost fanout        ;
-; estadoSiguiente.leer_data              ; Lost fanout        ;
-; Total Number of Removed Registers = 52 ;                    ;
-+----------------------------------------+--------------------+
++---------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                              ;
++----------------------------------------+----------------------------------------+
+; Register name                          ; Reason for Removal                     ;
++----------------------------------------+----------------------------------------+
+; memoria8b:r_ram|data_out[0]~en         ; Lost fanout                            ;
+; memoria8b:r_ram|data_out[1]~en         ; Lost fanout                            ;
+; memoria8b:r_ram|data_out[2]~en         ; Lost fanout                            ;
+; memoria8b:r_ram|data_out[3]~en         ; Lost fanout                            ;
+; memoria8b:r_ram|data_out[4]~en         ; Lost fanout                            ;
+; memoria8b:r_ram|data_out[5]~en         ; Lost fanout                            ;
+; memoria8b:r_ram|data_out[6]~en         ; Lost fanout                            ;
+; memoria8b:r_ram|data_out[7]~en         ; Lost fanout                            ;
+; registro8b:r_pc|data_out[0]~en         ; Lost fanout                            ;
+; registro8b:r_pc|data_out[1]~en         ; Lost fanout                            ;
+; registro8b:r_pc|data_out[2]~en         ; Lost fanout                            ;
+; registro8b:r_pc|data_out[3]~en         ; Lost fanout                            ;
+; registro8b:r_pc|data_out[4]~en         ; Lost fanout                            ;
+; registro8b:r_pc|data_out[5]~en         ; Lost fanout                            ;
+; registro8b:r_pc|data_out[6]~en         ; Lost fanout                            ;
+; registro8b:r_pc|data_out[7]~en         ; Lost fanout                            ;
+; registro8b:r_data|data_out[0]~en       ; Lost fanout                            ;
+; registro8b:r_data|data_out[1]~en       ; Lost fanout                            ;
+; registro8b:r_data|data_out[2]~en       ; Lost fanout                            ;
+; registro8b:r_data|data_out[3]~en       ; Lost fanout                            ;
+; registro8b:r_data|data_out[4]~en       ; Lost fanout                            ;
+; registro8b:r_data|data_out[5]~en       ; Lost fanout                            ;
+; registro8b:r_data|data_out[6]~en       ; Lost fanout                            ;
+; registro8b:r_data|data_out[7]~en       ; Lost fanout                            ;
+; registro8b:r_ri|data_out[0]~en         ; Lost fanout                            ;
+; registro8b:r_ri|data_out[1]~en         ; Lost fanout                            ;
+; registro8b:r_ri|data_out[2]~en         ; Lost fanout                            ;
+; registro8b:r_ri|data_out[3]~en         ; Lost fanout                            ;
+; registro8b:r_ri|data_out[4]~en         ; Lost fanout                            ;
+; registro8b:r_ri|data_out[5]~en         ; Lost fanout                            ;
+; registro8b:r_ri|data_out[6]~en         ; Lost fanout                            ;
+; registro8b:r_ri|data_out[7]~en         ; Lost fanout                            ;
+; registro8b:r_resultado|data_out[0]~en  ; Lost fanout                            ;
+; registro8b:r_resultado|data_out[1]~en  ; Lost fanout                            ;
+; registro8b:r_resultado|data_out[2]~en  ; Lost fanout                            ;
+; registro8b:r_resultado|data_out[3]~en  ; Lost fanout                            ;
+; registro8b:r_resultado|data_out[4]~en  ; Lost fanout                            ;
+; registro8b:r_resultado|data_out[5]~en  ; Lost fanout                            ;
+; registro8b:r_resultado|data_out[6]~en  ; Lost fanout                            ;
+; registro8b:r_resultado|data_out[7]~en  ; Lost fanout                            ;
+; registro8b:r_operador2|data_out[0]~en  ; Lost fanout                            ;
+; registro8b:r_operador2|data_out[1]~en  ; Lost fanout                            ;
+; registro8b:r_operador2|data_out[2]~en  ; Lost fanout                            ;
+; registro8b:r_operador2|data_out[3]~en  ; Lost fanout                            ;
+; registro8b:r_operador2|data_out[4]~en  ; Lost fanout                            ;
+; registro8b:r_operador2|data_out[5]~en  ; Lost fanout                            ;
+; registro8b:r_operador2|data_out[6]~en  ; Lost fanout                            ;
+; registro8b:r_operador2|data_out[7]~en  ; Lost fanout                            ;
+; registro8b:r_operador1|data_out[0]~en  ; Lost fanout                            ;
+; registro8b:r_operador1|data_out[1]~en  ; Lost fanout                            ;
+; registro8b:r_operador1|data_out[2]~en  ; Lost fanout                            ;
+; registro8b:r_operador1|data_out[3]~en  ; Lost fanout                            ;
+; registro8b:r_operador1|data_out[4]~en  ; Lost fanout                            ;
+; registro8b:r_operador1|data_out[5]~en  ; Lost fanout                            ;
+; registro8b:r_operador1|data_out[6]~en  ; Lost fanout                            ;
+; registro8b:r_operador1|data_out[7]~en  ; Lost fanout                            ;
+; alu:modulo_alu|resultado[7]~en         ; Lost fanout                            ;
+; alu:modulo_alu|resultado[6]~en         ; Lost fanout                            ;
+; alu:modulo_alu|resultado[5]~en         ; Lost fanout                            ;
+; alu:modulo_alu|resultado[4]~en         ; Lost fanout                            ;
+; alu:modulo_alu|resultado[3]~en         ; Lost fanout                            ;
+; alu:modulo_alu|resultado[2]~en         ; Lost fanout                            ;
+; alu:modulo_alu|resultado[1]~en         ; Lost fanout                            ;
+; alu:modulo_alu|resultado[0]~en         ; Lost fanout                            ;
+; codigo_operacion_alu[2]                ; Stuck at GND due to stuck port data_in ;
+; estadoSiguiente.activar_esc_pc         ; Lost fanout                            ;
+; estadoSiguiente.activar_esc_ram        ; Lost fanout                            ;
+; estadoSiguiente.escribir_ri            ; Lost fanout                            ;
+; estadoSiguiente.leer_data              ; Lost fanout                            ;
+; estadoSiguiente.leer_resultado         ; Lost fanout                            ;
+; estadoSiguiente.activar_leer_status    ; Lost fanout                            ;
+; estadoSiguiente.leer_status            ; Lost fanout                            ;
+; Total Number of Removed Registers = 72 ;                                        ;
++----------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -449,12 +484,12 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 104   ;
+; Total registers                              ; 136   ;
 ; Number of registers using Synchronous Clear  ; 3     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Synchronous Load   ; 8     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 40    ;
+; Number of registers using Clock Enable       ; 50    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -475,15 +510,16 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------+---------------------------+------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |cpu_nuevo|estadoSiguiente ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |cpu_nuevo|estadoSiguiente ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; No         ; |cpu_nuevo|Selector19      ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; 4:1                ; 8 bits    ; 16 LEs        ; 16 LEs               ; 0 LEs                  ; Yes        ; |cpu_nuevo|alu:modulo_alu|resultado[5]~reg0 ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |cpu_nuevo|estadoSiguiente                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |cpu_nuevo|estadoSiguiente                  ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |cpu_nuevo|estadoSiguiente                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 
 
 +--------------------------------------------------------------------------------------------+
@@ -585,6 +621,16 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
++-------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "registro8b:r_status"                                                                         ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port          ; Type   ; Severity ; Details                                                                             ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+; data_in[7..3] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; data_out      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++---------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -600,9 +646,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Jan 30 18:36:20 2024
+    Info: Processing started: Mon Feb 05 18:47:07 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpu_nuevo -c cpu_nuevo
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file /arepos github/cpu_vhdl/alu/alu.vhd
+    Info (12022): Found design unit 1: alu-estructural
+    Info (12023): Found entity 1: alu
 Info (12021): Found 2 design units, including 1 entities, in source file /arepos github/cpu_vhdl/registro8b/registro8b.vhd
     Info (12022): Found design unit 1: registro8b-estructural
     Info (12023): Found entity 1: registro8b
@@ -613,132 +662,153 @@ Info (12021): Found 2 design units, including 1 entities, in source file cpu_nue
     Info (12022): Found design unit 1: cpu_nuevo-cpu
     Info (12023): Found entity 1: cpu_nuevo
 Info (12127): Elaborating entity "cpu_nuevo" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at cpu_nuevo.vhd(24): used implicit default value for signal "in_salida" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
-Warning (10036): Verilog HDL or VHDL warning at cpu_nuevo.vhd(25): object "out_salida" assigned a value but never read
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(170): signal "en_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(171): signal "wr_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(172): signal "en_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(173): signal "wr_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(174): signal "en_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(175): signal "wr_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(176): signal "en_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(177): signal "wr_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(178): signal "en_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(179): signal "wr_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(180): signal "en_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(181): signal "wr_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(182): signal "en_op2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(183): signal "wr_op2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(227): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(229): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(230): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(238): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(240): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(241): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(252): signal "out_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(286): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(289): signal "out_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(304): signal "out_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(314): signal "op_a_cargar" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(315): signal "out_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(317): signal "out_op2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(328): signal "posicion_actual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(329): signal "posicion_actual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "en_ri_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "wr_ri_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "en_salida_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "wr_salida_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "en_pc_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "wr_pc_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "en_ram_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "wr_ram_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "en_data_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "wr_data_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "en_op1_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "wr_op1_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "en_op2_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "wr_op2_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "in_pc", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "posicion_ram", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "posicion_actual", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "in_ram", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "in_ri", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "in_data", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "in_op1", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(169): inferring latch(es) for signal or variable "in_op2", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "in_op2[0]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op2[1]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op2[2]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op2[3]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op2[4]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op2[5]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op2[6]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op2[7]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op1[0]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op1[1]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op1[2]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op1[3]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op1[4]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op1[5]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op1[6]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_op1[7]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_data[0]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_data[1]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_data[2]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_data[3]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_data[4]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_data[5]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_data[6]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_data[7]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "salida[0]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "salida[1]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "salida[2]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "salida[3]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "salida[4]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "salida[5]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "salida[6]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "salida[7]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ri[0]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ri[1]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ri[2]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ri[3]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ri[4]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ri[5]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ri[6]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ri[7]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ram[0]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ram[1]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ram[2]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ram[3]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ram[4]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ram[5]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ram[6]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_ram[7]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_actual[0]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_actual[1]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_actual[2]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_actual[3]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_actual[4]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_actual[5]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_actual[6]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_actual[7]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_ram[0]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_ram[1]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_ram[2]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_ram[3]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_ram[4]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_ram[5]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_ram[6]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "posicion_ram[7]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_pc[0]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_pc[1]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_pc[2]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_pc[3]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_pc[4]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_pc[5]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_pc[6]" at cpu_nuevo.vhd(169)
-Info (10041): Inferred latch for "in_pc[7]" at cpu_nuevo.vhd(169)
+Warning (10036): Verilog HDL or VHDL warning at cpu_nuevo.vhd(27): object "out_status" assigned a value but never read
+Warning (10541): VHDL Signal Declaration warning at cpu_nuevo.vhd(27): used implicit default value for signal "in_salida" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations.
+Warning (10036): Verilog HDL or VHDL warning at cpu_nuevo.vhd(28): object "out_salida" assigned a value but never read
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(195): signal "en_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(196): signal "wr_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(197): signal "en_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(198): signal "wr_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(199): signal "en_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(200): signal "wr_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(201): signal "en_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(202): signal "wr_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(203): signal "en_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(204): signal "wr_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(205): signal "en_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(206): signal "wr_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(207): signal "en_op2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(208): signal "wr_op2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(209): signal "en_status" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(210): signal "wr_status" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(211): signal "en_resultado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(212): signal "wr_resultado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(252): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(254): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(255): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(262): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(264): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(265): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(276): signal "out_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(310): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(313): signal "out_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(328): signal "out_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(363): signal "carry_alu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(363): signal "ov_alu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(363): signal "zeta_alu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(383): signal "out_resultado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(394): signal "posicion_actual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(395): signal "posicion_actual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "en_ri_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "wr_ri_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "en_salida_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "wr_salida_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "en_pc_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "wr_pc_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "en_ram_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "wr_ram_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "en_data_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "wr_data_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "en_resultado_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "wr_resultado_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "en_op1_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "wr_op1_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "en_op2_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "wr_op2_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "en_status_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "wr_status_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "in_pc", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "posicion_ram", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "posicion_actual", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "in_ram", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "in_ri", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "in_data", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "in_op1", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "in_op2", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(194): inferring latch(es) for signal or variable "in_status", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "in_status[0]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_status[1]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_status[2]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_status[3]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_status[4]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_status[5]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_status[6]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_status[7]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op2[0]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op2[1]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op2[2]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op2[3]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op2[4]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op2[5]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op2[6]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op2[7]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op1[0]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op1[1]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op1[2]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op1[3]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op1[4]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op1[5]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op1[6]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_op1[7]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_data[0]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_data[1]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_data[2]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_data[3]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_data[4]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_data[5]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_data[6]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_data[7]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "salida[0]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "salida[1]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "salida[2]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "salida[3]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "salida[4]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "salida[5]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "salida[6]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "salida[7]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ri[0]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ri[1]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ri[2]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ri[3]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ri[4]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ri[5]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ri[6]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ri[7]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ram[0]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ram[1]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ram[2]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ram[3]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ram[4]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ram[5]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ram[6]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_ram[7]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_actual[0]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_actual[1]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_actual[2]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_actual[3]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_actual[4]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_actual[5]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_actual[6]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_actual[7]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_ram[0]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_ram[1]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_ram[2]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_ram[3]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_ram[4]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_ram[5]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_ram[6]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "posicion_ram[7]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_pc[0]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_pc[1]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_pc[2]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_pc[3]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_pc[4]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_pc[5]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_pc[6]" at cpu_nuevo.vhd(194)
+Info (10041): Inferred latch for "in_pc[7]" at cpu_nuevo.vhd(194)
+Info (12128): Elaborating entity "alu" for hierarchy "alu:modulo_alu"
+Warning (10540): VHDL Signal Declaration warning at alu.vhd(9): used explicit default value for signal "zeta" because signal was never assigned a value
 Info (12128): Elaborating entity "registro8b" for hierarchy "registro8b:r_operador1"
 Info (12128): Elaborating entity "memoria8b" for hierarchy "memoria8b:r_ram"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
@@ -782,6 +852,14 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "registro8b:r_ri|data_out[5]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_ri|data_out[6]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_ri|data_out[7]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_resultado|data_out[0]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_resultado|data_out[1]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_resultado|data_out[2]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_resultado|data_out[3]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_resultado|data_out[4]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_resultado|data_out[5]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_resultado|data_out[6]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "registro8b:r_resultado|data_out[7]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_operador2|data_out[0]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_operador2|data_out[1]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_operador2|data_out[2]" feeding internal logic into a wire
@@ -798,6 +876,14 @@ Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "registro8b:r_operador1|data_out[5]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_operador1|data_out[6]" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "registro8b:r_operador1|data_out[7]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "alu:modulo_alu|resultado[7]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "alu:modulo_alu|resultado[6]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "alu:modulo_alu|resultado[5]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "alu:modulo_alu|resultado[4]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "alu:modulo_alu|resultado[3]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "alu:modulo_alu|resultado[2]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "alu:modulo_alu|resultado[1]" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "alu:modulo_alu|resultado[0]" feeding internal logic into a wire
 Info (19000): Inferred 1 megafunctions from design logic
     Info (276029): Inferred altsyncram megafunction from the following design logic: "memoria8b:r_ram|ram_rtl_0" 
         Info (286033): Parameter OPERATION_MODE set to DUAL_PORT
@@ -907,18 +993,18 @@ Warning (13012): Latch in_pc[6] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.incrementar_pc
 Warning (13012): Latch in_pc[7] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.incrementar_pc
-Info (17049): 52 registers lost all their fanouts during netlist optimizations.
+Info (17049): 71 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 278 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 327 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 251 logic cells
+    Info (21061): Implemented 300 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 176 warnings
-    Info: Peak virtual memory: 4651 megabytes
-    Info: Processing ended: Tue Jan 30 18:36:23 2024
-    Info: Elapsed time: 00:00:03
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 204 warnings
+    Info: Peak virtual memory: 4647 megabytes
+    Info: Processing ended: Mon Feb 05 18:47:09 2024
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 

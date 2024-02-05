@@ -55,11 +55,11 @@ init : PROCESS
 -- variable declarations                                     
 BEGIN                                                        
 	control(2)<='0';
-	wait for 1000ns;
+	wait for 980ns;
 	control(2)<='1';
-	wait for 430ns;
+	wait for 830ns;
 	control(2)<='0';
-	wait for 70ns;
+	wait for 50ns;
 	control(2)<='1';
 	--wait for 4000ns;
 WAIT;                                                       
@@ -79,24 +79,36 @@ BEGIN
 	data_in<="ZZZZZZZZ";
 	wait for 900ns;
 	control(1)<='1';
-	wait for 170ns;
-	data_in<="00001000";
+	wait for 150ns;
+	data_in<="00001000"; -- operacion cargar op1
 	wait for 20ns;
 	data_in<="ZZZZZZZZ";
 	wait for 60ns;
-	data_in<="00101100";
+	data_in<="00101100";	-- operador a cargar en op1
+	wait for 20ns;
+	data_in<="ZZZZZZZZ"; 
+	wait for 60ns;
+	data_in<="00010000"; -- operacion cargar op2
 	wait for 20ns;
 	data_in<="ZZZZZZZZ";
 	wait for 60ns;
-	data_in<="00010000";
+	data_in<="00011001"; -- operador a cargar en op2
 	wait for 20ns;
 	data_in<="ZZZZZZZZ";
 	wait for 60ns;
-	data_in<="00011001";
+	data_in<="00100000"; -- sumar
 	wait for 20ns;
 	data_in<="ZZZZZZZZ";
 	wait for 60ns;
-	data_in<="00101110";
+	data_in<="00110000";	-- restar
+	wait for 20ns;
+	data_in<="ZZZZZZZZ";
+	wait for 60ns;
+	data_in<="00101000";	-- and
+	wait for 20ns;
+	data_in<="ZZZZZZZZ";
+	wait for 60ns;
+	data_in<="00111000";	-- or 
 	wait for 20ns;
 	data_in<="ZZZZZZZZ";
 	wait for 20ns;

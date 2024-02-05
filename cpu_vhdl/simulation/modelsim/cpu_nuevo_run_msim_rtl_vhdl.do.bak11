@@ -5,6 +5,7 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
+vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl/alu/alu.vhd}
 vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl/registro8b/registro8b.vhd}
 vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl/memoria8b/memoria8b.vhd}
 vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd}

@@ -14,15 +14,20 @@ architecture cpu of cpu_nuevo is
 
 type estado is(inicio, activar_leer_pc, activar_esc_pc, reset_pc, espera, escribir_ram, activar_leer_ram, activar_esc_ram, leer_ram,
 					mostrar_salida, activar_leer_ri, activar_esc_ri, leer_ri, escribir_ri, activar_leer_op1, activar_esc_op1, escribir_op1, leer_op1, incrementar_pc,
-					activar_esc_data, activar_leer_data, escribir_data, leer_data, activar_leer_op2, activar_esc_op2, escribir_op2, leer_op2);
+					activar_esc_data, activar_leer_data, escribir_data, leer_data, activar_leer_op2, activar_esc_op2, escribir_op2, leer_op2,
+					activar_carga_alu, activar_esc_resultado, activar_leer_resultado, escribir_resultado, leer_resultado,
+					activar_esc_status, activar_leer_status, escribir_status, leer_status);
+					
 signal estadoActual: estado := inicio;
 signal estadoSiguiente: estado;
 
 signal en_ri, wr_ri, en_salida, wr_salida, en_pc, wr_pc, en_op1, wr_op1, en_op2, wr_op2, en_resultado, wr_resultado, en_status, wr_status, en_data, wr_data,
-		 en_ram, wr_ram, op_a_cargar: std_logic:='0';
+		 en_ram, wr_ram, op_a_cargar, carry_alu , ov_alu, zeta_alu: std_logic:='0';
 		 
 signal in_ram, out_ram, out_pc, in_ri, out_ri, in_op1, out_op1, in_op2, out_op2, in_data, out_data, in_resultado, out_resultado, in_status, out_status,
 		 in_salida, out_salida: std_logic_vector (7 downto 0); 
+		 
+signal codigo_operacion_alu: std_logic_vector (2 downto 0):= "000";
 		 
 signal in_pc, posicion_ram, posicion_actual: std_logic_vector (7 downto 0):="00000000";
 		 
@@ -56,10 +61,11 @@ end component memoria8b;
 
 begin
 
---modulo_alu: alu port map(clk=>clk,
---						resultado=>,
---						op1=>, op2=>,
---						cod_op=>, carry=> ,ov=> ,zeta=> );
+modulo_alu: alu port map(clk=>clk,
+						resultado=>in_resultado,
+						op1=>out_op1, op2=>out_op2,
+						cod_op=>codigo_operacion_alu,
+						carry=>carry_alu, ov=>ov_alu, zeta=>zeta_alu);
 
 r_operador1: registro8b port map (clk=>clk, en=>en_op1, wr=>wr_op1,
 								   data_in=>in_op1,
@@ -68,14 +74,14 @@ r_operador1: registro8b port map (clk=>clk, en=>en_op1, wr=>wr_op1,
 r_operador2: registro8b port map (clk=>clk, en=>en_op2, wr=>wr_op2,
 								   data_in=>in_op2,
 									data_out=>out_op2);
---									
---r_resultado: registro8b port map (clk=>clk, en=>en_resultado, wr=>wr_resultado,
---								   data_in=>in_resultado,
---									data_out=>out_resultado);
+									
+r_resultado: registro8b port map (clk=>clk, en=>en_resultado, wr=>wr_resultado,
+								   data_in=>in_resultado,
+									data_out=>out_resultado);
 
---r_status: registro8b port map (clk=>clk, en=>en_status, wr=>wr_status,
---								   data_in=>in_status,
---									data_out=>out_status);
+r_status: registro8b port map (clk=>clk, en=>en_status, wr=>wr_status,
+								   data_in=>in_status,
+									data_out=>out_status);
 
 r_ri: registro8b port map (clk=>clk, en=>en_ri, wr=>wr_ri,
 								   data_in=>in_ri,
@@ -130,6 +136,18 @@ begin
 						when "00010000"=>
 							estadoSiguiente<=activar_esc_data;
 							op_a_cargar<='1';
+						when "00100000"=>
+							estadoSiguiente<=activar_carga_alu;
+							codigo_operacion_alu<="000";
+						when "00110000"=>
+							estadoSiguiente<=activar_carga_alu;
+							codigo_operacion_alu<="001";
+						when "00101000"=>
+							estadoSiguiente<=activar_carga_alu;
+							codigo_operacion_alu<="011";
+						when "00111000"=>
+							estadoSiguiente<=activar_carga_alu;
+							codigo_operacion_alu<="010";
 						when others=>
 							estadoSiguiente<=espera;
 					end case;
@@ -152,6 +170,13 @@ begin
 				
 				when leer_op1=>estadoSiguiente<=mostrar_salida;
 				when leer_op2=>estadoSiguiente<=mostrar_salida;
+				
+				when activar_carga_alu=>estadoSiguiente<=activar_esc_resultado;
+				when activar_esc_resultado=>estadoSiguiente<=escribir_resultado;
+				when escribir_resultado=>estadoSiguiente<=activar_esc_status;
+				when activar_esc_status=>estadoSiguiente<=escribir_status;
+				when escribir_status=>estadoSiguiente<=activar_leer_resultado;
+				when activar_leer_resultado=>estadoSiguiente<=mostrar_salida;
 				
 				when mostrar_salida=>estadoSiguiente<=incrementar_pc;
 				when others=>estadoSiguiente<=inicio;
@@ -181,10 +206,10 @@ variable en_op1_v: std_logic:=en_op1;
 variable wr_op1_v: std_logic:=wr_op1;
 variable en_op2_v: std_logic:=en_op2;
 variable wr_op2_v: std_logic:=wr_op2;
---variable en_status_v: std_logic:=en_status;
---variable wr_status_v: std_logic:=wr_status;
---variable en_resultado_v: std_logic:=en_resultado;
---variable wr_resultado_v: std_logic:=wr_resultado;
+variable en_status_v: std_logic:=en_status;
+variable wr_status_v: std_logic:=wr_status;
+variable en_resultado_v: std_logic:=en_resultado;
+variable wr_resultado_v: std_logic:=wr_resultado;
 
 begin
 	case estadoActual is
@@ -201,14 +226,14 @@ begin
 			
 			en_data_v:='0';
 			wr_data_v:='0';
---			en_resultado_v:='0';
---			wr_resultado_v:='0';
+			en_resultado_v:='0';
+			wr_resultado_v:='0';
 			en_op1_v:='0';
 			wr_op1_v:='0';
 			en_op2_v:='0';
 			wr_op2_v:='0';
---			en_status_v:='0';
---			wr_status_v:='0';
+			en_status_v:='0';
+			wr_status_v:='0';
 
 		when reset_pc=>
 			en_pc_v:='1';
@@ -234,7 +259,6 @@ begin
 			wr_ram_v:='0';		
 		
 		when leer_ram=>
-			
 			in_ri<=out_ram;
 			
 			posicion_ram<=out_pc;
@@ -307,15 +331,57 @@ begin
 			wr_ri_v:='1';
 			in_ri<="00000000";
 			
+		when activar_carga_alu=>
+			en_op1_v:='1';
+			wr_op1_v:='0';
+			en_op2_v:='1';
+			wr_op2_v:='0';
+			
+		when activar_esc_resultado=>
+			en_resultado_v:='1';
+			wr_resultado_v:='1';
+			
+		when activar_esc_status=>
+			en_status_v:='1';
+			wr_status_v:='1';
+		
+		when activar_leer_resultado=>
+			en_resultado_v:='1';
+			wr_resultado_v:='0';
+			
+		when activar_leer_status=>
+			en_status_v:='1';
+			wr_status_v:='0';
+		
+		when escribir_resultado=>
+			en_resultado_v:='1';
+			wr_resultado_v:='1';
+			
+		when escribir_status=>
+			en_status_v:='1';
+			wr_status_v:='1';
+			in_status<="00000"&carry_alu&ov_alu&zeta_alu;
+		
+		when leer_resultado=>
+			en_resultado_v:='1';
+			wr_resultado_v:='0';
+			
+		when leer_status=>
+			en_status_v:='1';
+			wr_status_v:='0';
+		
 		when mostrar_salida=>
 			en_salida_v:='1';
 			wr_salida_v:='0';
 			
-			if op_a_cargar='0' then
-				salida<=out_op1;
-			else
-				salida<=out_op2;
-			end if;
+--			if op_a_cargar='0' then
+--				salida<=out_op1;
+--			else
+--				salida<=out_op2;
+--			end if;
+			
+			salida<=out_resultado;
+			
 			en_ri_v:='1';
 			wr_ri_v:='0';
 			
@@ -371,10 +437,10 @@ begin
 	wr_op1<=wr_op1_v;
  en_op2<=en_op2_v;
 	wr_op2<=wr_op2_v;
---	en_status<=en_status_v;
---	wr_status<=wr_status_v;
---	en_resultado<=en_resultado_v;
---	wr_resultado<=wr_resultado_v;
+	en_status<=en_status_v;
+	wr_status<=wr_status_v;
+	en_resultado<=en_resultado_v;
+	wr_resultado<=wr_resultado_v;
 end process logicaSalida;
 
 end architecture cpu;
