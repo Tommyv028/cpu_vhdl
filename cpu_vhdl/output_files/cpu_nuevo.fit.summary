@@ -1,14 +1,14 @@
-Fitter Status : Successful - Mon Feb 05 18:47:13 2024
+Fitter Status : Successful - Wed Feb 14 23:24:11 2024
 Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : cpu_nuevo
 Top-level Entity Name : cpu_nuevo
 Family : Cyclone II
 Device : EP2C5T144C8
 Timing Models : Final
-Total logic elements : 231 / 4,608 ( 5 % )
-    Total combinational functions : 202 / 4,608 ( 4 % )
-    Dedicated logic registers : 136 / 4,608 ( 3 % )
-Total registers : 136
+Total logic elements : 289 / 4,608 ( 6 % )
+    Total combinational functions : 263 / 4,608 ( 6 % )
+    Dedicated logic registers : 146 / 4,608 ( 3 % )
+Total registers : 146
 Total pins : 19 / 89 ( 21 % )
 Total virtual pins : 0
 Total memory bits : 512 / 119,808 ( < 1 % )

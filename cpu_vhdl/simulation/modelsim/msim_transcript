@@ -10,7 +10,7 @@
 # ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
 #          Updated modelsim.ini.
 # 
-# vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl/alu/alu.vhd}
+# vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/alu/alu.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -19,7 +19,7 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity alu
 # -- Compiling architecture estructural of alu
-# vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl/registro8b/registro8b.vhd}
+# vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/registro8b/registro8b.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -28,7 +28,7 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity registro8b
 # -- Compiling architecture estructural of registro8b
-# vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl/memoria8b/memoria8b.vhd}
+# vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/memoria8b/memoria8b.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -37,7 +37,7 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity memoria8b
 # -- Compiling architecture estructural of memoria8b
-# vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd}
+# vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
@@ -46,73 +46,85 @@
 # -- Loading package STD_LOGIC_UNSIGNED
 # -- Compiling entity cpu_nuevo
 # -- Compiling architecture cpu of cpu_nuevo
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(195): (vcom-1013) Initial value of "en_pc_v" depends on value of signal "en_pc".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(221): (vcom-1013) Initial value of "en_pc_v" depends on value of signal "en_pc".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(196): (vcom-1013) Initial value of "wr_pc_v" depends on value of signal "wr_pc".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(222): (vcom-1013) Initial value of "wr_pc_v" depends on value of signal "wr_pc".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(197): (vcom-1013) Initial value of "en_ram_v" depends on value of signal "en_ram".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(223): (vcom-1013) Initial value of "en_ram_v" depends on value of signal "en_ram".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(198): (vcom-1013) Initial value of "wr_ram_v" depends on value of signal "wr_ram".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(224): (vcom-1013) Initial value of "wr_ram_v" depends on value of signal "wr_ram".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(199): (vcom-1013) Initial value of "en_ri_v" depends on value of signal "en_ri".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(225): (vcom-1013) Initial value of "en_ri_v" depends on value of signal "en_ri".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(200): (vcom-1013) Initial value of "wr_ri_v" depends on value of signal "wr_ri".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(226): (vcom-1013) Initial value of "wr_ri_v" depends on value of signal "wr_ri".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(201): (vcom-1013) Initial value of "en_salida_v" depends on value of signal "en_salida".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(227): (vcom-1013) Initial value of "en_salida_v" depends on value of signal "en_salida".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(202): (vcom-1013) Initial value of "wr_salida_v" depends on value of signal "wr_salida".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(228): (vcom-1013) Initial value of "wr_salida_v" depends on value of signal "wr_salida".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(203): (vcom-1013) Initial value of "en_data_v" depends on value of signal "en_data".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(229): (vcom-1013) Initial value of "en_data_v" depends on value of signal "en_data".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(204): (vcom-1013) Initial value of "wr_data_v" depends on value of signal "wr_data".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(230): (vcom-1013) Initial value of "wr_data_v" depends on value of signal "wr_data".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(205): (vcom-1013) Initial value of "en_op1_v" depends on value of signal "en_op1".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(231): (vcom-1013) Initial value of "en_op1_v" depends on value of signal "en_op1".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(206): (vcom-1013) Initial value of "wr_op1_v" depends on value of signal "wr_op1".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(232): (vcom-1013) Initial value of "wr_op1_v" depends on value of signal "wr_op1".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(207): (vcom-1013) Initial value of "en_op2_v" depends on value of signal "en_op2".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(233): (vcom-1013) Initial value of "en_op2_v" depends on value of signal "en_op2".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(208): (vcom-1013) Initial value of "wr_op2_v" depends on value of signal "wr_op2".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(234): (vcom-1013) Initial value of "wr_op2_v" depends on value of signal "wr_op2".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(209): (vcom-1013) Initial value of "en_status_v" depends on value of signal "en_status".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(235): (vcom-1013) Initial value of "en_status_v" depends on value of signal "en_status".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(210): (vcom-1013) Initial value of "wr_status_v" depends on value of signal "wr_status".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(236): (vcom-1013) Initial value of "wr_status_v" depends on value of signal "wr_status".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(211): (vcom-1013) Initial value of "en_resultado_v" depends on value of signal "en_resultado".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(237): (vcom-1013) Initial value of "en_resultado_v" depends on value of signal "en_resultado".
 # 
-# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd(212): (vcom-1013) Initial value of "wr_resultado_v" depends on value of signal "wr_resultado".
+# ** Warning: [9] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd(238): (vcom-1013) Initial value of "wr_resultado_v" depends on value of signal "wr_resultado".
 # 
 # 
-# vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht}
+# vcom -93 -work work {Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht}
 # Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity cpu_nuevo_vhd_tst
 # -- Compiling architecture cpu_nuevo_arch of cpu_nuevo_vhd_tst
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(60): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(62): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(75): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(82): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(84): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(86): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(88): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(90): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(92): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(94): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(96): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(98): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(100): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(102): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(104): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(106): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(108): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(110): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(112): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(114): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(58): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(60): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(62): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(73): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(75): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(80): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(82): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(84): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(86): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(88): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(90): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(92): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(94): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(96): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(98): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(100): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(102): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(104): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(106): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(108): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(110): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(112): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(114): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(116): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(118): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(120): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(122): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(124): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(126): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(128): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(130): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(132): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(134): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(136): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# ** Warning: [4] Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht(138): (vcom-1207) An abstract literal and an identifier must have a separator between them.
 # 
 # vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  cpu_nuevo_vhd_tst
 # vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps cpu_nuevo_vhd_tst 
@@ -1001,1387 +1013,6 @@
 #    Time: 2190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2570 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2570 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2570 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2590 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2590 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2590 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2750 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2750 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2750 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2750 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2770 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2770 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2770 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2770 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2970 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2970 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2970 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2970 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2990 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2990 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2990 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2990 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3010 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3010 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3010 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3010 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 3410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/estadoActual
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/estadoSiguiente
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_ri
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_ri
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_salida
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_salida
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_pc
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_pc
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_op1
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_op1
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_op2
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_op2
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_resultado
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_resultado
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_status
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_status
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_data
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_data
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/en_ram
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/wr_ram
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/op_a_cargar
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/carry_alu
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/ov_alu
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/zeta_alu
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_ram
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_ram
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_pc
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_ri
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_ri
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_op1
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_op1
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_op2
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_op2
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_data
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_data
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_resultado
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_resultado
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_status
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_status
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_salida
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/out_salida
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/codigo_operacion_alu
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/in_pc
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/posicion_ram
-add wave -position end  sim:/cpu_nuevo_vhd_tst/i1/posicion_actual
-restart
-run 10us
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 30 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 30 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 30 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 30 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 50 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 50 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 70 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 70 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 70 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 70 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 90 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 90 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 90 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 90 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 570 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 570 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 570 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 570 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 590 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 590 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 590 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 590 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 750 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 750 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 750 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 750 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 770 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 770 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 770 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 770 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 970 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 970 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 970 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 970 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 990 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 990 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 990 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 990 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1010 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1010 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1010 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1010 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1570 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1570 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1570 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1570 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1590 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1590 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1590 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1590 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1750 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1750 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1750 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1750 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1770 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1770 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1770 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1770 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1970 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1970 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1970 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1970 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1990 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1990 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 1990 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 1990 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2010 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2010 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2010 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2010 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2110 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2130 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2150 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-#    Time: 2170 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2190 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
@@ -2390,18 +1021,24 @@ run 10us
 #    Time: 2210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2210 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 2250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -2504,8 +1141,6 @@ run 10us
 #    Time: 2510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -2536,56 +1171,42 @@ run 10us
 #    Time: 2610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2610 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2630 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2650 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2670 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2690 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2710 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2730 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -2608,72 +1229,54 @@ run 10us
 #    Time: 2790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2790 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2810 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2830 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2850 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2870 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2890 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2910 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2930 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 2950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 2950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 2950 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -2704,24 +1307,32 @@ run 10us
 #    Time: 3030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3030 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3050 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3070 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3090 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -2776,72 +1387,54 @@ run 10us
 #    Time: 3230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3230 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3250 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3270 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3290 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3310 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3330 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3350 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3370 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 #    Time: 3390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
-# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-#    Time: 3390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3390 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
@@ -2852,3 +1445,59 @@ run 10us
 #    Time: 3410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
 # ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
 #    Time: 3410 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 3430 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 3450 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 3470 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 3490 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 3510 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 3530 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 3550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 3550 ns  Iteration: 1  Instance: /cpu_nuevo_vhd_tst/i1/modulo_alu

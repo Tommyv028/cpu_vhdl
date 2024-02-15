@@ -1,5 +1,5 @@
 Assembler report for cpu_nuevo
-Mon Feb 05 18:47:15 2024
+Wed Feb 14 23:24:13 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -10,8 +10,8 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
   2. Assembler Summary
   3. Assembler Settings
   4. Assembler Generated Files
-  5. Assembler Device Options: Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/output_files/cpu_nuevo.sof
-  6. Assembler Device Options: Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/output_files/cpu_nuevo.pof
+  5. Assembler Device Options: Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/output_files/cpu_nuevo.sof
+  6. Assembler Device Options: Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/output_files/cpu_nuevo.pof
   7. Assembler Messages
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Mon Feb 05 18:47:15 2024 ;
+; Assembler Status      ; Successful - Wed Feb 14 23:24:13 2024 ;
 ; Revision Name         ; cpu_nuevo                             ;
 ; Top-level Entity Name ; cpu_nuevo                             ;
 ; Family                ; Cyclone II                            ;
@@ -78,37 +78,37 @@ applicable agreement for further details.
 +-----------------------------------------------------------------------------+----------+---------------+
 
 
-+---------------------------------------------------------------+
-; Assembler Generated Files                                     ;
-+---------------------------------------------------------------+
-; File Name                                                     ;
-+---------------------------------------------------------------+
-; Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/output_files/cpu_nuevo.sof ;
-; Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/output_files/cpu_nuevo.pof ;
-+---------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                           ;
++-----------------------------------------------------------------------------------------------------+
+; File Name                                                                                           ;
++-----------------------------------------------------------------------------------------------------+
+; Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/output_files/cpu_nuevo.sof ;
+; Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/output_files/cpu_nuevo.pof ;
++-----------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Assembler Device Options: Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/output_files/cpu_nuevo.sof ;
-+----------------+------------------------------------------------------------------------+
-; Option         ; Setting                                                                ;
-+----------------+------------------------------------------------------------------------+
-; Device         ; EP2C5T144C8                                                            ;
-; JTAG usercode  ; 0x0009DC45                                                             ;
-; Checksum       ; 0x0009DC45                                                             ;
-+----------------+------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/output_files/cpu_nuevo.sof ;
++----------------+--------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                      ;
++----------------+--------------------------------------------------------------------------------------------------------------+
+; Device         ; EP2C5T144C8                                                                                                  ;
+; JTAG usercode  ; 0x000A9363                                                                                                   ;
+; Checksum       ; 0x000A9363                                                                                                   ;
++----------------+--------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------+
-; Assembler Device Options: Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/output_files/cpu_nuevo.pof ;
-+--------------------+--------------------------------------------------------------------+
-; Option             ; Setting                                                            ;
-+--------------------+--------------------------------------------------------------------+
-; Device             ; EPCS4                                                              ;
-; JTAG usercode      ; 0x00000000                                                         ;
-; Checksum           ; 0x074E756D                                                         ;
-; Compression Ratio  ; 3                                                                  ;
-+--------------------+--------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/output_files/cpu_nuevo.pof ;
++--------------------+----------------------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                                  ;
++--------------------+----------------------------------------------------------------------------------------------------------+
+; Device             ; EPCS4                                                                                                    ;
+; JTAG usercode      ; 0x00000000                                                                                               ;
+; Checksum           ; 0x074CED49                                                                                               ;
+; Compression Ratio  ; 3                                                                                                        ;
++--------------------+----------------------------------------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -117,13 +117,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Assembler
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Feb 05 18:47:14 2024
+    Info: Processing started: Wed Feb 14 23:24:12 2024
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off cpu_nuevo -c cpu_nuevo
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus II 64-Bit Assembler was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4549 megabytes
-    Info: Processing ended: Mon Feb 05 18:47:15 2024
+    Info: Peak virtual memory: 4545 megabytes
+    Info: Processing ended: Wed Feb 14 23:24:13 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

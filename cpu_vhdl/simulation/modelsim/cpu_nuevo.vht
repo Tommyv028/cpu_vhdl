@@ -57,7 +57,7 @@ BEGIN
 	control(2)<='0';
 	wait for 980ns;
 	control(2)<='1';
-	wait for 830ns;
+	wait for 1150ns;
 	control(2)<='0';
 	wait for 50ns;
 	control(2)<='1';
@@ -108,23 +108,35 @@ BEGIN
 	wait for 20ns;
 	data_in<="ZZZZZZZZ";
 	wait for 60ns;
-	data_in<="00111000";	-- or 
+	data_in<="00111000"; -- or
+	wait for 20ns;
+	data_in<="ZZZZZZZZ";
+	wait for 60ns;
+	data_in<="01000000";	-- shl
+	wait for 20ns;
+	data_in<="ZZZZZZZZ";
+	wait for 60ns;
+	data_in<="01001000";	-- shr
+	wait for 20ns;
+	data_in<="ZZZZZZZZ";
+	wait for 60ns;
+	data_in<="01010000";	-- not
+	wait for 20ns;
+	data_in<="ZZZZZZZZ";
+	wait for 60ns;
+	data_in<="01011000";	-- resultado a op1
+	wait for 20ns;
+	data_in<="ZZZZZZZZ";
+	wait for 60ns;
+	data_in<="01100000";	-- mostrar resultado
+	wait for 20ns;
+	data_in<="ZZZZZZZZ";
+	wait for 60ns;
+	data_in<="01101000";	-- mostrar status
 	wait for 20ns;
 	data_in<="ZZZZZZZZ";
 	wait for 20ns;
 	control(1)<='0';
---	wait for 100ns;
---	data_in<="00000000";
---	wait for 400ns;
---	data_in<="00101100";
---	wait for 500ns;
---	data_in<="01001010";
---	wait for 500ns;
---	data_in<="00011001";
---	wait for 500ns;
---	data_in<="00101110";
---	wait for 500ns;
---	data_in<="ZZZZZZZZ";
 	wait;
 	
 wait;

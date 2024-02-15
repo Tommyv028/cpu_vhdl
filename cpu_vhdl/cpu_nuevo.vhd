@@ -22,11 +22,12 @@ signal estadoActual: estado := inicio;
 signal estadoSiguiente: estado;
 
 signal en_ri, wr_ri, en_salida, wr_salida, en_pc, wr_pc, en_op1, wr_op1, en_op2, wr_op2, en_resultado, wr_resultado, en_status, wr_status, en_data, wr_data,
-		 en_ram, wr_ram, op_a_cargar, carry_alu , ov_alu, zeta_alu: std_logic:='0';
+		 en_ram, wr_ram, op_a_cargar, carry_alu , ov_alu, zeta_alu, mostrar: std_logic:='0';
 		 
 signal in_ram, out_ram, out_pc, in_ri, out_ri, in_op1, out_op1, in_op2, out_op2, in_data, out_data, in_resultado, out_resultado, in_status, out_status,
 		 in_salida, out_salida: std_logic_vector (7 downto 0); 
 		 
+signal donde_leer: std_logic_vector (1 downto 0):= "00";
 signal codigo_operacion_alu: std_logic_vector (2 downto 0):= "000";
 		 
 signal in_pc, posicion_ram, posicion_actual: std_logic_vector (7 downto 0):="00000000";
@@ -133,9 +134,11 @@ begin
 						when "00001000"=>
 							estadoSiguiente<=activar_esc_data;
 							op_a_cargar<='0';
+							donde_leer<="00";
 						when "00010000"=>
 							estadoSiguiente<=activar_esc_data;
 							op_a_cargar<='1';
+							donde_leer<="00";
 						when "00100000"=>
 							estadoSiguiente<=activar_carga_alu;
 							codigo_operacion_alu<="000";
@@ -148,6 +151,27 @@ begin
 						when "00111000"=>
 							estadoSiguiente<=activar_carga_alu;
 							codigo_operacion_alu<="010";
+						when "01000000"=>
+							estadoSiguiente<=activar_carga_alu;
+							codigo_operacion_alu<="100";
+						when "01001000"=>
+							estadoSiguiente<=activar_carga_alu;
+							codigo_operacion_alu<="101";
+						when "01010000"=>
+							estadoSiguiente<=activar_carga_alu;
+							codigo_operacion_alu<="110";	
+						when "01011000"=>
+							estadoSiguiente<=activar_esc_data;
+							donde_leer<="01";
+							op_a_cargar<='0';
+						
+						when "01100000"=>
+							estadoSiguiente<=mostrar_salida;
+							mostrar<='0';
+						when "01101000"=>
+							estadoSiguiente<=mostrar_salida;
+							mostrar<='1';
+							
 						when others=>
 							estadoSiguiente<=espera;
 					end case;
@@ -168,17 +192,19 @@ begin
 				when activar_leer_op1=>estadoSiguiente<=leer_op1;
 				when activar_leer_op2=>estadoSiguiente<=leer_op2;
 				
-				when leer_op1=>estadoSiguiente<=mostrar_salida;
-				when leer_op2=>estadoSiguiente<=mostrar_salida;
+				when leer_op1=>estadoSiguiente<=activar_leer_pc;--mostrar_salida;
+				when leer_op2=>estadoSiguiente<=activar_leer_pc;--mostrar_salida;
 				
 				when activar_carga_alu=>estadoSiguiente<=activar_esc_resultado;
 				when activar_esc_resultado=>estadoSiguiente<=escribir_resultado;
 				when escribir_resultado=>estadoSiguiente<=activar_esc_status;
 				when activar_esc_status=>estadoSiguiente<=escribir_status;
 				when escribir_status=>estadoSiguiente<=activar_leer_resultado;
-				when activar_leer_resultado=>estadoSiguiente<=mostrar_salida;
+				when activar_leer_resultado=>estadoSiguiente<=activar_leer_status;
+				when activar_leer_status=>estadoSiguiente<=activar_leer_pc;--mostrar_salida;
 				
-				when mostrar_salida=>estadoSiguiente<=incrementar_pc;
+				when mostrar_salida=>estadoSiguiente<=	  activar_leer_pc;
+																	--incrementar_pc;
 				when others=>estadoSiguiente<=inicio;
 			end case;
 		end if;
@@ -273,7 +299,9 @@ begin
 			wr_ri_v:='1';
 			
 		when leer_ri=>
-			salida<=out_ri;
+			--salida<=out_ri;
+			en_ri_v:='1';
+			wr_ri_v:='0';
 			
 		when activar_esc_op1=>
 			en_op1_v:='1';
@@ -297,6 +325,9 @@ begin
 			
 			en_ram_v:='1';
 			wr_ram_v:='0';
+			
+			en_resultado_v:='1';
+			wr_resultado_v:='0';
 				
 		when activar_leer_data=>
 			en_data_v:='1';
@@ -307,7 +338,14 @@ begin
 			wr_data_v:='0';
 		
 		when escribir_data=>
-			in_data<=out_ram;
+			
+			case donde_leer is
+				when "00"=> in_data<=out_ram;
+				when "01"=> in_data<=out_resultado;
+				when "10"=> in_data<=data_in;
+				when others=>
+			end case;
+			--in_data<=out_ram;
 		
 		when escribir_op1=>
 			in_op1<=out_data;
@@ -374,13 +412,13 @@ begin
 			en_salida_v:='1';
 			wr_salida_v:='0';
 			
---			if op_a_cargar='0' then
---				salida<=out_op1;
---			else
---				salida<=out_op2;
---			end if;
+			if mostrar='0' then
+				salida<=out_resultado;
+			else
+				salida<=out_status;
+			end if;
 			
-			salida<=out_resultado;
+			--salida<=out_resultado;
 			
 			en_ri_v:='1';
 			wr_ri_v:='0';
@@ -435,7 +473,7 @@ begin
 	wr_data<=wr_data_v;
 	en_op1<=en_op1_v;
 	wr_op1<=wr_op1_v;
- en_op2<=en_op2_v;
+	en_op2<=en_op2_v;
 	wr_op2<=wr_op2_v;
 	en_status<=en_status_v;
 	wr_status<=wr_status_v;
