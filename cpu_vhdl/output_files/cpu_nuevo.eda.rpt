@@ -1,5 +1,5 @@
 EDA Netlist Writer report for cpu_nuevo
-Wed Feb 14 23:24:17 2024
+Fri Feb 16 18:49:19 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Wed Feb 14 23:24:17 2024 ;
+; EDA Netlist Writer Status ; Successful - Fri Feb 16 18:49:19 2024 ;
 ; Revision Name             ; cpu_nuevo                             ;
 ; Top-level Entity Name     ; cpu_nuevo                             ;
 ; Family                    ; Cyclone II                            ;
@@ -66,16 +66,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                          ;
-+---------------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                                     ;
-+---------------------------------------------------------------------------------------------------------------------+
-; Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vho          ;
-; Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo_fast.vho     ;
-; Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo_vhd.sdo      ;
-; Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo_vhd_fast.sdo ;
-+---------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------+
+; Simulation Generated Files                                                    ;
++-------------------------------------------------------------------------------+
+; Generated Files                                                               ;
++-------------------------------------------------------------------------------+
+; Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vho          ;
+; Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo_fast.vho     ;
+; Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo_vhd.sdo      ;
+; Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo_vhd_fast.sdo ;
++-------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -84,13 +84,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Feb 14 23:24:17 2024
+    Info: Processing started: Fri Feb 16 18:49:19 2024
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off cpu_nuevo -c cpu_nuevo
-Info (204026): Generated files "cpu_nuevo.vho", "cpu_nuevo_fast.vho", "cpu_nuevo_vhd.sdo" and "cpu_nuevo_vhd_fast.sdo" in directory "Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/" for EDA simulation tool
+Info (204026): Generated files "cpu_nuevo.vho", "cpu_nuevo_fast.vho", "cpu_nuevo_vhd.sdo" and "cpu_nuevo_vhd_fast.sdo" in directory "Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4519 megabytes
-    Info: Processing ended: Wed Feb 14 23:24:18 2024
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4525 megabytes
+    Info: Processing ended: Fri Feb 16 18:49:19 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

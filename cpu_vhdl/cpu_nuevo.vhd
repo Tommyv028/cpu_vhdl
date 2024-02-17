@@ -12,7 +12,7 @@ end entity cpu_nuevo;
 
 architecture cpu of cpu_nuevo is
 
-type estado is(inicio, activar_leer_pc, activar_esc_pc, reset_pc, espera, escribir_ram, activar_leer_ram, activar_esc_ram, leer_ram,
+type estado is(inicio, activar_leer_pc, activar_esc_pc, reset_pc, cambiar_pc, espera, escribir_ram, activar_leer_ram, activar_esc_ram, leer_ram,
 					mostrar_salida, activar_leer_ri, activar_esc_ri, leer_ri, escribir_ri, activar_leer_op1, activar_esc_op1, escribir_op1, leer_op1, incrementar_pc,
 					activar_esc_data, activar_leer_data, escribir_data, leer_data, activar_leer_op2, activar_esc_op2, escribir_op2, leer_op2,
 					activar_carga_alu, activar_esc_resultado, activar_leer_resultado, escribir_resultado, leer_resultado,
@@ -29,7 +29,7 @@ signal in_ram, out_ram, out_pc, in_ri, out_ri, in_op1, out_op1, in_op2, out_op2,
 		 
 signal donde_leer: std_logic_vector (1 downto 0):= "00";
 signal codigo_operacion_alu: std_logic_vector (2 downto 0):= "000";
-		 
+signal cambio_a_pc: std_logic_vector (5 downto 0):= "000000";	 
 signal in_pc, posicion_ram, posicion_actual: std_logic_vector (7 downto 0):="00000000";
 		 
 		 
@@ -164,16 +164,32 @@ begin
 							estadoSiguiente<=activar_esc_data;
 							donde_leer<="01";
 							op_a_cargar<='0';
-						
 						when "01100000"=>
 							estadoSiguiente<=mostrar_salida;
 							mostrar<='0';
 						when "01101000"=>
 							estadoSiguiente<=mostrar_salida;
 							mostrar<='1';
+						when "01110000"=>
+							estadoSiguiente<=activar_esc_data;
+							op_a_cargar<='0';
+							donde_leer<="10";
+						when "01111000"=>
+							estadoSiguiente<=activar_esc_data;
+							op_a_cargar<='1';
+							donde_leer<="10";	
 							
 						when others=>
-							estadoSiguiente<=espera;
+							
+							if out_ri>="10000000" then
+								cambio_a_pc<=out_ri(5 downto 0);
+								estadoSiguiente<=activar_esc_pc;
+							--elsif out_ri>="1100000" then
+							--	estadoSiguiente<=espera;
+							else 
+								estadoSiguiente<=espera;
+							end if;
+							
 					end case;
 				when activar_esc_data=>estadoSiguiente<=escribir_data;
 				when escribir_data=>estadoSiguiente<=activar_leer_data;
@@ -192,8 +208,8 @@ begin
 				when activar_leer_op1=>estadoSiguiente<=leer_op1;
 				when activar_leer_op2=>estadoSiguiente<=leer_op2;
 				
-				when leer_op1=>estadoSiguiente<=activar_leer_pc;--mostrar_salida;
-				when leer_op2=>estadoSiguiente<=activar_leer_pc;--mostrar_salida;
+				when leer_op1=>estadoSiguiente<=activar_leer_pc;
+				when leer_op2=>estadoSiguiente<=activar_leer_pc;
 				
 				when activar_carga_alu=>estadoSiguiente<=activar_esc_resultado;
 				when activar_esc_resultado=>estadoSiguiente<=escribir_resultado;
@@ -201,10 +217,13 @@ begin
 				when activar_esc_status=>estadoSiguiente<=escribir_status;
 				when escribir_status=>estadoSiguiente<=activar_leer_resultado;
 				when activar_leer_resultado=>estadoSiguiente<=activar_leer_status;
-				when activar_leer_status=>estadoSiguiente<=activar_leer_pc;--mostrar_salida;
+				when activar_leer_status=>estadoSiguiente<=activar_leer_pc;
 				
-				when mostrar_salida=>estadoSiguiente<=	  activar_leer_pc;
-																	--incrementar_pc;
+				when mostrar_salida=>estadoSiguiente<=activar_leer_pc;
+				
+				when activar_esc_pc=>estadoSiguiente<=cambiar_pc;
+				when cambiar_pc=>estadoSiguiente<=espera;
+								
 				when others=>estadoSiguiente<=inicio;
 			end case;
 		end if;
@@ -249,7 +268,6 @@ begin
 			wr_pc_v:='0';
 			en_ram_v:='0';
 			wr_ram_v:='0';
-			
 			en_data_v:='0';
 			wr_data_v:='0';
 			en_resultado_v:='0';
@@ -271,6 +289,10 @@ begin
 		when activar_leer_pc=>
 			en_pc_v:='1';
 			wr_pc_v:='0';
+		
+		when activar_esc_pc=>
+			en_pc_v:='1';
+			wr_pc_v:='1';
 			
 		when escribir_ram=>
 			en_ram_v:='1';
@@ -282,7 +304,9 @@ begin
 		
 		when activar_leer_ram=>
 			en_ram_v:='1';
-			wr_ram_v:='0';		
+			wr_ram_v:='0';
+			posicion_ram<=out_pc;
+			posicion_actual<=out_pc;		
 		
 		when leer_ram=>
 			in_ri<=out_ram;
@@ -299,7 +323,6 @@ begin
 			wr_ri_v:='1';
 			
 		when leer_ri=>
-			--salida<=out_ri;
 			en_ri_v:='1';
 			wr_ri_v:='0';
 			
@@ -338,14 +361,12 @@ begin
 			wr_data_v:='0';
 		
 		when escribir_data=>
-			
 			case donde_leer is
 				when "00"=> in_data<=out_ram;
 				when "01"=> in_data<=out_resultado;
 				when "10"=> in_data<=data_in;
 				when others=>
 			end case;
-			--in_data<=out_ram;
 		
 		when escribir_op1=>
 			in_op1<=out_data;
@@ -418,19 +439,21 @@ begin
 				salida<=out_status;
 			end if;
 			
-			--salida<=out_resultado;
-			
 			en_ri_v:='1';
 			wr_ri_v:='0';
+		
+		when cambiar_pc=>
+			en_pc_v:='1';
+			wr_pc_v:='1';
+	
+			in_pc<="00"&cambio_a_pc;
 			
-
-
 		when incrementar_pc=>
 			en_pc_v:='1';
 			wr_pc_v:='1';
 	
 			in_pc<=posicion_actual+1;
-			if posicion_actual="01000000" then
+			if posicion_actual="00111111" then
 				in_pc<="00000000";
 			end if;
 			

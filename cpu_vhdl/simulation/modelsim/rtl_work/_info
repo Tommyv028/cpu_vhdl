@@ -2,24 +2,24 @@ m255
 K3
 13
 cModel Technology
-Z0 dZ:\aRepos GitHub\cpu_vhdl-main-no-funcionan-las-operaciones-alu\cpu_vhdl\simulation\modelsim
+Z0 dZ:\aRepos GitHub\cpu_vhdl\cpu_vhdl\simulation\modelsim
 Ealu
-Z1 w1707171735
+Z1 w1698962016
 Z2 DPx4 ieee 18 std_logic_unsigned 0 22 RYmj;=TK`k=k>D@Cz`zoB3
 Z3 DPx4 ieee 15 std_logic_arith 0 22 4`Y?g_lkdn;7UL9IiJck01
 Z4 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
 Z5 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
-Z6 dZ:\aRepos GitHub\cpu_vhdl-main-no-funcionan-las-operaciones-alu\cpu_vhdl\simulation\modelsim
-Z7 8Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/alu/alu.vhd
-Z8 FZ:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/alu/alu.vhd
+Z6 dZ:\aRepos GitHub\cpu_vhdl\cpu_vhdl\simulation\modelsim
+Z7 8Z:/aRepos GitHub/cpu_vhdl/alu/alu.vhd
+Z8 FZ:/aRepos GitHub/cpu_vhdl/alu/alu.vhd
 l0
 L6
 VV>1lQ=HoTa9BUe9Rk3i;_3
 Z9 OV;C;10.1d;51
 31
-Z10 !s108 1707963876.045000
-Z11 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/alu/alu.vhd|
-Z12 !s107 Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/alu/alu.vhd|
+Z10 !s108 1708120185.039000
+Z11 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl/alu/alu.vhd|
+Z12 !s107 Z:/aRepos GitHub/cpu_vhdl/alu/alu.vhd|
 Z13 o-93 -work work -O0
 Z14 tExplicit 1
 !s100 0CDcKdg[fVzS^lB@7LLml0
@@ -43,22 +43,22 @@ R14
 !s100 RlRbkej8hkPIPl@kGTJQf2
 !i10b 1
 Ecpu_nuevo
-Z15 w1707963841
+Z15 w1708120146
 R2
 R3
 R4
 R5
 R6
-Z16 8Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd
-Z17 FZ:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd
+Z16 8Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd
+Z17 FZ:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd
 l0
 L6
 V;7DSAjcQjI1co]z<]4<Y@1
 R9
 31
-Z18 !s108 1707963876.572000
-Z19 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd|
-Z20 !s107 Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/cpu_nuevo.vhd|
+Z18 !s108 1708120185.511000
+Z19 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd|
+Z20 !s107 Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/cpu_nuevo.vhd|
 R13
 R14
 !s100 bZ81AO3Ml[bKk5WT=Wdb_3
@@ -71,7 +71,7 @@ R5
 DEx4 work 9 cpu_nuevo 0 22 ;7DSAjcQjI1co]z<]4<Y@1
 l63
 L13
-V>2?e0h7?Ue[<[TUb>4K=E2
+VmC1dz]6Xczj3G>dIb:ZQ[1
 R9
 31
 R18
@@ -79,15 +79,15 @@ R19
 R20
 R13
 R14
-!s100 GX`CmSF5ZICGOHEdE=EOP3
+!s100 az^4FoZP7X[DhSdjkhP5J0
 !i10b 1
 Ecpu_nuevo_vhd_tst
-Z21 w1707950407
+Z21 w1708119266
 R4
 R5
 R6
-Z22 8Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht
-Z23 FZ:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht
+Z22 8Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht
+Z23 FZ:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht
 l0
 L30
 VN@S?VfINJDmETF7QB:V4k1
@@ -95,9 +95,9 @@ VN@S?VfINJDmETF7QB:V4k1
 R9
 31
 !i10b 1
-Z24 !s108 1707963876.843000
-Z25 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht|
-Z26 !s107 Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht|
+Z24 !s108 1708120185.865000
+Z25 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht|
+Z26 !s107 Z:/aRepos GitHub/cpu_vhdl/cpu_vhdl/simulation/modelsim/cpu_nuevo.vht|
 R13
 R14
 Acpu_nuevo_arch
@@ -106,8 +106,8 @@ R5
 DEx4 work 17 cpu_nuevo_vhd_tst 0 22 N@S?VfINJDmETF7QB:V4k1
 l45
 L32
-VDnPNQ_jj@L[HeDFi`KmPl3
-!s100 FcaY8V@M^`V^?=CGgIMZ23
+V7A9PlJbV>8FZfU30L6a_>0
+!s100 f>8KO26zQVR_?g1ZCG@YJ0
 R9
 31
 !i10b 1
@@ -117,22 +117,22 @@ R26
 R13
 R14
 Ememoria8b
-R1
+Z27 w1699976564
 R2
 R3
 R4
 R5
 R6
-Z27 8Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/memoria8b/memoria8b.vhd
-Z28 FZ:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/memoria8b/memoria8b.vhd
+Z28 8Z:/aRepos GitHub/cpu_vhdl/memoria8b/memoria8b.vhd
+Z29 FZ:/aRepos GitHub/cpu_vhdl/memoria8b/memoria8b.vhd
 l0
 L6
 V=mc`zbFh9TaKaY^3lgXfc0
 R9
 31
-Z29 !s108 1707963876.390000
-Z30 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/memoria8b/memoria8b.vhd|
-Z31 !s107 Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/memoria8b/memoria8b.vhd|
+Z30 !s108 1708120185.351000
+Z31 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl/memoria8b/memoria8b.vhd|
+Z32 !s107 Z:/aRepos GitHub/cpu_vhdl/memoria8b/memoria8b.vhd|
 R13
 R14
 !s100 6eH:Kk:3dogkYcS:_Q^Xf3
@@ -148,30 +148,30 @@ L14
 V5WUQdnT40LO>a@lY1]S`m0
 R9
 31
-R29
 R30
 R31
+R32
 R13
 R14
 !s100 <6WzO^EVzBc]__LefNcGT1
 !i10b 1
 Eregistro8b
-R1
+Z33 w1698266764
 R2
 R3
 R4
 R5
 R6
-Z32 8Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/registro8b/registro8b.vhd
-Z33 FZ:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/registro8b/registro8b.vhd
+Z34 8Z:/aRepos GitHub/cpu_vhdl/registro8b/registro8b.vhd
+Z35 FZ:/aRepos GitHub/cpu_vhdl/registro8b/registro8b.vhd
 l0
 L6
 V_j8RG;@e;`feTeGbfS2UM2
 R9
 31
-Z34 !s108 1707963876.221000
-Z35 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/registro8b/registro8b.vhd|
-Z36 !s107 Z:/aRepos GitHub/cpu_vhdl-main-no-funcionan-las-operaciones-alu/registro8b/registro8b.vhd|
+Z36 !s108 1708120185.195000
+Z37 !s90 -reportprogress|300|-93|-work|work|Z:/aRepos GitHub/cpu_vhdl/registro8b/registro8b.vhd|
+Z38 !s107 Z:/aRepos GitHub/cpu_vhdl/registro8b/registro8b.vhd|
 R13
 R14
 !s100 8NgUaKCS<<2k100f@YDfj2
@@ -187,9 +187,9 @@ L13
 V<nTCm2P7cK4WDV2FH@MMO3
 R9
 31
-R34
-R35
 R36
+R37
+R38
 R13
 R14
 !s100 A[[Al5YE>CkUT_CWRae^O0
