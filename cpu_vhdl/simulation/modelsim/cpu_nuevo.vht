@@ -57,7 +57,7 @@ BEGIN
 	control(2)<='0';
 	wait for 980ns;
 	control(2)<='1';
-	wait for 1430ns;
+	wait for 1150ns;
 	control(2)<='0';
 	wait for 50ns;
 	control(2)<='1';
@@ -135,22 +135,8 @@ BEGIN
 	data_in<="01101000";	-- mostrar status
 	wait for 20ns;
 	data_in<="ZZZZZZZZ";
-	wait for 60ns;
-	data_in<="01110000";	-- leer data_in a op1
 	wait for 20ns;
-	data_in<="ZZZZZZZZ";
-	wait for 60ns;
-	data_in<="01111000";	-- leer data_in a op2
-	wait for 20ns;
-	data_in<="ZZZZZZZZ";
-	wait for 60ns;
-	data_in<="10000010";	-- mandar pc a 0
-	wait for 20ns;
-	data_in<="ZZZZZZZZ";
-	wait for 60ns;	
 	control(1)<='0';
-	wait for 100ns;
-	data_in<="11111111";
 	wait;
 	
 wait;

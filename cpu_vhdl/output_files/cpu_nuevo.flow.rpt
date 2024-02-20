@@ -1,5 +1,5 @@
 Flow report for cpu_nuevo
-Fri Feb 16 18:49:19 2024
+Tue Feb 20 18:24:07 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Fri Feb 16 18:49:19 2024           ;
+; Flow Status                        ; Successful - Tue Feb 20 18:24:07 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; cpu_nuevo                                       ;
 ; Top-level Entity Name              ; cpu_nuevo                                       ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C5T144C8                                     ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 296 / 4,608 ( 6 % )                             ;
-;     Total combinational functions  ; 275 / 4,608 ( 6 % )                             ;
-;     Dedicated logic registers      ; 151 / 4,608 ( 3 % )                             ;
-; Total registers                    ; 151                                             ;
+; Total logic elements               ; 291 / 4,608 ( 6 % )                             ;
+;     Total combinational functions  ; 269 / 4,608 ( 6 % )                             ;
+;     Dedicated logic registers      ; 162 / 4,608 ( 4 % )                             ;
+; Total registers                    ; 162                                             ;
 ; Total pins                         ; 19 / 89 ( 21 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 512 / 119,808 ( < 1 % )                         ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/16/2024 18:49:07 ;
+; Start date & time ; 02/20/2024 18:23:56 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; cpu_nuevo           ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +--------------------------------------+---------------------------------------+---------------+-------------+-------------------+
 ; Assignment Name                      ; Value                                 ; Default Value ; Entity Name ; Section Id        ;
 +--------------------------------------+---------------------------------------+---------------+-------------+-------------------+
-; COMPILER_SIGNATURE_ID                ; 39908816193717.170812014717864        ; --            ; --          ; --                ;
+; COMPILER_SIGNATURE_ID                ; 39908816193717.170846423503724        ; --            ; --          ; --                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                    ; --            ; --          ; cpu_nuevo_vhd_tst ;
 ; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; cpu_nuevo_vhd_tst                     ; --            ; --          ; eda_simulation    ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --          ; eda_simulation    ;
@@ -84,7 +84,7 @@ applicable agreement for further details.
 ; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/cpu_nuevo.vht     ; --            ; --          ; cpu_nuevo_vhd_tst ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; cpu_nuevo_vhd_tst                     ; --            ; --          ; cpu_nuevo_vhd_tst ;
 ; EDA_TEST_BENCH_NAME                  ; cpu_nuevo_vhd_tst                     ; --            ; --          ; eda_simulation    ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 20 us                                 ; --            ; --          ; cpu_nuevo_vhd_tst ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 10 us                                 ; --            ; --          ; cpu_nuevo_vhd_tst ;
 ; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --          ; --                ;
 ; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --          ; --                ;
 ; PARTITION_COLOR                      ; 16764057                              ; --            ; --          ; Top               ;
@@ -101,12 +101,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4647 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:04     ; 1.0                     ; 4796 MB             ; 00:00:04                           ;
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4643 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:04     ; 1.0                     ; 4799 MB             ; 00:00:04                           ;
 ; Assembler                 ; 00:00:01     ; 1.0                     ; 4551 MB             ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4546 MB             ; 00:00:02                           ;
-; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4513 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:10                           ;
+; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4547 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4518 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:09     ; --                      ; --                  ; 00:00:09                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
