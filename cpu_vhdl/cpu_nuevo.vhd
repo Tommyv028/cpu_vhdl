@@ -165,7 +165,6 @@ begin
 							estadoSiguiente<=activar_esc_data;
 							donde_leer<="01";
 							op_a_cargar<='0';
-						
 						when "01100000"=>
 							estadoSiguiente<=activar_esc_salida;
 							mostrar<='0';
@@ -173,6 +172,14 @@ begin
 							estadoSiguiente<=activar_esc_salida;
 							mostrar<='1';
 							
+						when "01110000"=>
+							estadoSiguiente<=activar_esc_data;
+							donde_leer<="10";
+							op_a_cargar<='0';
+						when "01111000"=>
+							estadoSiguiente<=activar_esc_data;
+							donde_leer<="10";
+							op_a_cargar<='1';
 							
 						when others=>
 							estadoSiguiente<=espera;

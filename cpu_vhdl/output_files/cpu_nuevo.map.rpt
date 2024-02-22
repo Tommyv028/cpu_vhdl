@@ -1,5 +1,5 @@
 Analysis & Synthesis report for cpu_nuevo
-Tue Feb 20 18:23:57 2024
+Thu Feb 22 18:33:07 2024
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -53,15 +53,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Feb 20 18:23:57 2024           ;
+; Analysis & Synthesis Status        ; Successful - Thu Feb 22 18:33:07 2024           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; cpu_nuevo                                       ;
 ; Top-level Entity Name              ; cpu_nuevo                                       ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 335                                             ;
-;     Total combinational functions  ; 269                                             ;
-;     Dedicated logic registers      ; 162                                             ;
-; Total registers                    ; 162                                             ;
+; Total logic elements               ; 344                                             ;
+;     Total combinational functions  ; 278                                             ;
+;     Dedicated logic registers      ; 163                                             ;
+; Total registers                    ; 163                                             ;
 ; Total pins                         ; 19                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 512                                             ;
@@ -194,29 +194,29 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+------------+
 ; Resource                                    ; Usage      ;
 +---------------------------------------------+------------+
-; Estimated Total logic elements              ; 335        ;
+; Estimated Total logic elements              ; 344        ;
 ;                                             ;            ;
-; Total combinational functions               ; 269        ;
+; Total combinational functions               ; 278        ;
 ; Logic element usage by number of LUT inputs ;            ;
-;     -- 4 input functions                    ; 67         ;
-;     -- 3 input functions                    ; 129        ;
+;     -- 4 input functions                    ; 75         ;
+;     -- 3 input functions                    ; 130        ;
 ;     -- <=2 input functions                  ; 73         ;
 ;                                             ;            ;
 ; Logic elements by mode                      ;            ;
-;     -- normal mode                          ; 241        ;
+;     -- normal mode                          ; 250        ;
 ;     -- arithmetic mode                      ; 28         ;
 ;                                             ;            ;
-; Total registers                             ; 162        ;
-;     -- Dedicated logic registers            ; 162        ;
+; Total registers                             ; 163        ;
+;     -- Dedicated logic registers            ; 163        ;
 ;     -- I/O registers                        ; 0          ;
 ;                                             ;            ;
 ; I/O pins                                    ; 19         ;
 ; Total memory bits                           ; 512        ;
 ; Embedded Multiplier 9-bit elements          ; 0          ;
 ; Maximum fan-out node                        ; control[0] ;
-; Maximum fan-out                             ; 170        ;
-; Total fan-out                               ; 1266       ;
-; Average fan-out                             ; 2.76       ;
+; Maximum fan-out                             ; 171        ;
+; Total fan-out                               ; 1304       ;
+; Average fan-out                             ; 2.79       ;
 +---------------------------------------------+------------+
 
 
@@ -225,7 +225,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                            ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------+--------------+
-; |cpu_nuevo                                ; 269 (195)         ; 162 (40)     ; 512         ; 0            ; 0       ; 0         ; 19   ; 0            ; |cpu_nuevo                                                                     ; work         ;
+; |cpu_nuevo                                ; 278 (204)         ; 163 (41)     ; 512         ; 0            ; 0       ; 0         ; 19   ; 0            ; |cpu_nuevo                                                                     ; work         ;
 ;    |alu:modulo_alu|                       ; 65 (65)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|alu:modulo_alu                                                      ; work         ;
 ;    |memoria8b:r_ram|                      ; 1 (1)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|memoria8b:r_ram                                                     ; work         ;
 ;       |altsyncram:ram_rtl_0|              ; 0 (0)             ; 0 (0)        ; 512         ; 0            ; 0       ; 0         ; 0    ; 0            ; |cpu_nuevo|memoria8b:r_ram|altsyncram:ram_rtl_0                                ; work         ;
@@ -368,14 +368,14 @@ Encoding Type:  One-Hot
 ; in_pc[3]                                            ; WideOr40                        ; yes                    ;
 ; in_pc[4]                                            ; WideOr40                        ; yes                    ;
 ; in_pc[5]                                            ; WideOr40                        ; yes                    ;
-; in_data[0]                                          ; estadoSiguiente.escribir_data   ; yes                    ;
-; in_data[1]                                          ; estadoSiguiente.escribir_data   ; yes                    ;
-; in_data[2]                                          ; estadoSiguiente.escribir_data   ; yes                    ;
-; in_data[3]                                          ; estadoSiguiente.escribir_data   ; yes                    ;
-; in_data[4]                                          ; estadoSiguiente.escribir_data   ; yes                    ;
-; in_data[5]                                          ; estadoSiguiente.escribir_data   ; yes                    ;
-; in_data[6]                                          ; estadoSiguiente.escribir_data   ; yes                    ;
-; in_data[7]                                          ; estadoSiguiente.escribir_data   ; yes                    ;
+; in_data[0]                                          ; in_data[5]                      ; yes                    ;
+; in_data[1]                                          ; in_data[5]                      ; yes                    ;
+; in_data[2]                                          ; in_data[5]                      ; yes                    ;
+; in_data[3]                                          ; in_data[5]                      ; yes                    ;
+; in_data[4]                                          ; in_data[5]                      ; yes                    ;
+; in_data[5]                                          ; in_data[5]                      ; yes                    ;
+; in_data[6]                                          ; in_data[5]                      ; yes                    ;
+; in_data[7]                                          ; in_data[5]                      ; yes                    ;
 ; posicion_actual[0]                                  ; WideOr41                        ; yes                    ;
 ; posicion_actual[1]                                  ; WideOr41                        ; yes                    ;
 ; posicion_actual[2]                                  ; WideOr41                        ; yes                    ;
@@ -507,7 +507,6 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; registro8b:r_status|data_out[5]~reg0    ; Stuck at GND due to stuck port data_in ;
 ; registro8b:r_status|data_out[4]~reg0    ; Stuck at GND due to stuck port data_in ;
 ; registro8b:r_status|data_out[3]~reg0    ; Stuck at GND due to stuck port data_in ;
-; donde_leer[1]                           ; Stuck at GND due to stuck port data_in ;
 ; estadoSiguiente.activar_esc_pc          ; Lost fanout                            ;
 ; estadoSiguiente.activar_esc_ram         ; Lost fanout                            ;
 ; estadoSiguiente.mostrar_salida          ; Lost fanout                            ;
@@ -518,7 +517,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; registro8b:r_pc|data_out[7]~reg0        ; Lost fanout                            ;
 ; registro8b:r_pc|data_out[6]~reg0        ; Lost fanout                            ;
 ; registro8b:r_pc|registro[6,7]           ; Lost fanout                            ;
-; Total Number of Removed Registers = 104 ;                                        ;
+; Total Number of Removed Registers = 103 ;                                        ;
 +-----------------------------------------+----------------------------------------+
 
 
@@ -549,12 +548,12 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 162   ;
+; Total registers                              ; 163   ;
 ; Number of registers using Synchronous Clear  ; 3     ;
 ; Number of registers using Synchronous Load   ; 1     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 63    ;
+; Number of registers using Clock Enable       ; 64    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -581,7 +580,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 ; 7:1                ; 7 bits    ; 28 LEs        ; 28 LEs               ; 0 LEs                  ; Yes        ; |cpu_nuevo|alu:modulo_alu|resultado[1]~reg0 ;
-; 256:1              ; 3 bits    ; 510 LEs       ; 6 LEs                ; 504 LEs                ; Yes        ; |cpu_nuevo|op_a_cargar                      ;
+; 256:1              ; 3 bits    ; 510 LEs       ; 9 LEs                ; 501 LEs                ; Yes        ; |cpu_nuevo|op_a_cargar                      ;
 ; 256:1              ; 3 bits    ; 510 LEs       ; 12 LEs               ; 498 LEs                ; Yes        ; |cpu_nuevo|codigo_operacion_alu[2]          ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |cpu_nuevo|estadoSiguiente                  ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |cpu_nuevo|estadoSiguiente                  ;
@@ -694,7 +693,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -704,7 +703,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Feb 20 18:23:55 2024
+    Info: Processing started: Thu Feb 22 18:33:02 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off cpu_nuevo -c cpu_nuevo
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file /arepos github/cpu_vhdl-main sin los ultimos 3/alu/alu.vhd
@@ -720,163 +719,163 @@ Info (12021): Found 2 design units, including 1 entities, in source file cpu_nue
     Info (12022): Found design unit 1: cpu_nuevo-cpu
     Info (12023): Found entity 1: cpu_nuevo
 Info (12127): Elaborating entity "cpu_nuevo" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(229): signal "en_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(230): signal "wr_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(231): signal "en_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(232): signal "wr_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(233): signal "en_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(234): signal "wr_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(235): signal "en_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(236): signal "wr_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(237): signal "en_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(238): signal "wr_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(239): signal "en_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(240): signal "wr_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(241): signal "en_op2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(242): signal "wr_op2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(243): signal "en_status" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(244): signal "wr_status" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(245): signal "en_resultado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(246): signal "wr_resultado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(286): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(288): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(289): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(296): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(298): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(299): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(350): signal "donde_leer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(351): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(352): signal "out_resultado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(353): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(359): signal "out_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(374): signal "out_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(409): signal "carry_alu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(409): signal "ov_alu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(409): signal "zeta_alu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(427): signal "mostrar" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(428): signal "out_resultado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(430): signal "out_status" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(442): signal "out_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(447): signal "out_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(454): signal "posicion_actual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(455): signal "posicion_actual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "en_ri_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "wr_ri_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "en_salida_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "wr_salida_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "en_pc_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "wr_pc_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "en_ram_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "wr_ram_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "en_data_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "wr_data_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "en_resultado_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "wr_resultado_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "en_op1_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "wr_op1_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "en_op2_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "wr_op2_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "en_status_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "wr_status_v", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "in_pc", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "posicion_ram", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "posicion_actual", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "in_ram", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "in_ri", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "in_data", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "in_op1", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "in_op2", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "in_status", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "in_salida", which holds its previous value in one or more paths through the process
-Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(228): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process
-Info (10041): Inferred latch for "salida[0]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "salida[1]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "salida[2]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "salida[3]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "salida[4]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "salida[5]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "salida[6]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "salida[7]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_salida[0]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_salida[1]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_salida[2]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_salida[3]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_salida[4]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_salida[5]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_salida[6]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_salida[7]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_status[0]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_status[1]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_status[2]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_status[3]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_status[4]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_status[5]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_status[6]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_status[7]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op2[0]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op2[1]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op2[2]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op2[3]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op2[4]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op2[5]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op2[6]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op2[7]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op1[0]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op1[1]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op1[2]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op1[3]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op1[4]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op1[5]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op1[6]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_op1[7]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_data[0]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_data[1]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_data[2]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_data[3]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_data[4]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_data[5]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_data[6]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_data[7]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ri[0]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ri[1]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ri[2]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ri[3]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ri[4]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ri[5]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ri[6]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ri[7]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ram[0]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ram[1]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ram[2]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ram[3]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ram[4]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ram[5]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ram[6]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_ram[7]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_actual[0]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_actual[1]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_actual[2]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_actual[3]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_actual[4]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_actual[5]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_actual[6]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_actual[7]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_ram[0]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_ram[1]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_ram[2]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_ram[3]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_ram[4]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_ram[5]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_ram[6]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "posicion_ram[7]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_pc[0]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_pc[1]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_pc[2]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_pc[3]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_pc[4]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_pc[5]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_pc[6]" at cpu_nuevo.vhd(228)
-Info (10041): Inferred latch for "in_pc[7]" at cpu_nuevo.vhd(228)
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(236): signal "en_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(237): signal "wr_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(238): signal "en_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(239): signal "wr_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(240): signal "en_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(241): signal "wr_ri" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(242): signal "en_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(243): signal "wr_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(244): signal "en_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(245): signal "wr_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(246): signal "en_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(247): signal "wr_op1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(248): signal "en_op2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(249): signal "wr_op2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(250): signal "en_status" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(251): signal "wr_status" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(252): signal "en_resultado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(253): signal "wr_resultado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(293): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(295): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(296): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(303): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(305): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(306): signal "out_pc" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(357): signal "donde_leer" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(358): signal "out_ram" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(359): signal "out_resultado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(360): signal "data_in" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(366): signal "out_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(381): signal "out_data" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(416): signal "carry_alu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(416): signal "ov_alu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(416): signal "zeta_alu" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(434): signal "mostrar" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(435): signal "out_resultado" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(437): signal "out_status" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(449): signal "out_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(454): signal "out_salida" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(461): signal "posicion_actual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10492): VHDL Process Statement warning at cpu_nuevo.vhd(462): signal "posicion_actual" is read inside the Process Statement but isn't in the Process Statement's sensitivity list
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "en_ri_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "wr_ri_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "en_salida_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "wr_salida_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "en_pc_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "wr_pc_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "en_ram_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "wr_ram_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "en_data_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "wr_data_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "en_resultado_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "wr_resultado_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "en_op1_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "wr_op1_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "en_op2_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "wr_op2_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "en_status_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "wr_status_v", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "in_pc", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "posicion_ram", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "posicion_actual", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "in_ram", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "in_ri", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "in_data", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "in_op1", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "in_op2", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "in_status", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "in_salida", which holds its previous value in one or more paths through the process
+Warning (10631): VHDL Process Statement warning at cpu_nuevo.vhd(235): inferring latch(es) for signal or variable "salida", which holds its previous value in one or more paths through the process
+Info (10041): Inferred latch for "salida[0]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "salida[1]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "salida[2]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "salida[3]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "salida[4]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "salida[5]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "salida[6]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "salida[7]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_salida[0]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_salida[1]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_salida[2]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_salida[3]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_salida[4]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_salida[5]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_salida[6]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_salida[7]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_status[0]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_status[1]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_status[2]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_status[3]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_status[4]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_status[5]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_status[6]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_status[7]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op2[0]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op2[1]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op2[2]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op2[3]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op2[4]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op2[5]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op2[6]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op2[7]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op1[0]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op1[1]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op1[2]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op1[3]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op1[4]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op1[5]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op1[6]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_op1[7]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_data[0]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_data[1]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_data[2]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_data[3]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_data[4]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_data[5]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_data[6]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_data[7]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ri[0]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ri[1]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ri[2]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ri[3]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ri[4]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ri[5]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ri[6]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ri[7]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ram[0]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ram[1]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ram[2]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ram[3]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ram[4]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ram[5]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ram[6]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_ram[7]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_actual[0]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_actual[1]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_actual[2]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_actual[3]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_actual[4]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_actual[5]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_actual[6]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_actual[7]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_ram[0]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_ram[1]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_ram[2]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_ram[3]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_ram[4]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_ram[5]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_ram[6]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "posicion_ram[7]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_pc[0]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_pc[1]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_pc[2]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_pc[3]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_pc[4]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_pc[5]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_pc[6]" at cpu_nuevo.vhd(235)
+Info (10041): Inferred latch for "in_pc[7]" at cpu_nuevo.vhd(235)
 Info (12128): Elaborating entity "alu" for hierarchy "alu:modulo_alu"
 Warning (10540): VHDL Signal Declaration warning at alu.vhd(9): used explicit default value for signal "zeta" because signal was never assigned a value
 Info (12128): Elaborating entity "registro8b" for hierarchy "registro8b:r_operador1"
@@ -1055,18 +1054,34 @@ Warning (13012): Latch in_pc[4] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.incrementar_pc
 Warning (13012): Latch in_pc[5] has unsafe behavior
     Warning (13013): Ports D and ENA on the latch are fed by the same signal estadoSiguiente.incrementar_pc
+Warning (13012): Latch in_data[0] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal donde_leer[1]
+Warning (13012): Latch in_data[1] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal donde_leer[1]
+Warning (13012): Latch in_data[2] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal donde_leer[1]
+Warning (13012): Latch in_data[3] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal donde_leer[1]
+Warning (13012): Latch in_data[4] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal donde_leer[1]
+Warning (13012): Latch in_data[5] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal donde_leer[1]
+Warning (13012): Latch in_data[6] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal donde_leer[1]
+Warning (13012): Latch in_data[7] has unsafe behavior
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal donde_leer[1]
 Info (17049): 91 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 411 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 420 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 11 input pins
     Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 384 logic cells
+    Info (21061): Implemented 393 logic cells
     Info (21064): Implemented 8 RAM segments
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 200 warnings
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 216 warnings
     Info: Peak virtual memory: 4647 megabytes
-    Info: Processing ended: Tue Feb 20 18:23:57 2024
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:02
+    Info: Processing ended: Thu Feb 22 18:33:07 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:03
 
 

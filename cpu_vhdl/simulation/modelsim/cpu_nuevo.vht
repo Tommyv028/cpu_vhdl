@@ -57,7 +57,7 @@ BEGIN
 	control(2)<='0';
 	wait for 980ns;
 	control(2)<='1';
-	wait for 1150ns;
+	wait for 1350ns;
 	control(2)<='0';
 	wait for 50ns;
 	control(2)<='1';
@@ -135,10 +135,26 @@ BEGIN
 	data_in<="01101000";	-- mostrar status
 	wait for 20ns;
 	data_in<="ZZZZZZZZ";
+	wait for 60ns;
+	data_in<="01110000";	-- cargar op1 con data_in
 	wait for 20ns;
+	data_in<="ZZZZZZZZ";
+	wait for 60ns;
+	data_in<="01111000";	-- cargar op2 con data_in
+	wait for 20ns;
+	data_in<="ZZZZZZZZ";
+	wait for 60ns;
 	control(1)<='0';
+	wait for 4120ns;
+	data_in<="11111110";
+	wait for 80ns;
+	data_in<="ZZZZZZZZ";
+	wait for 130ns;
+	data_in<="00000001";
+	wait for 100ns;
+	data_in<="ZZZZZZZZ";
 	wait;
-	
+
 wait;
 END PROCESS programa;                                          
 END cpu_nuevo_arch;
