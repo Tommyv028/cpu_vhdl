@@ -57,7 +57,7 @@ BEGIN
 	control(2)<='0';
 	wait for 980ns;
 	control(2)<='1';
-	wait for 1350ns;
+	wait for 1430ns;
 	control(2)<='0';
 	wait for 50ns;
 	control(2)<='1';
@@ -141,6 +141,10 @@ BEGIN
 	data_in<="ZZZZZZZZ";
 	wait for 60ns;
 	data_in<="01111000";	-- cargar op2 con data_in
+	wait for 20ns;
+	data_in<="ZZZZZZZZ";
+	wait for 60ns;
+	data_in<="10000001";	-- cambiar pc a 000001
 	wait for 20ns;
 	data_in<="ZZZZZZZZ";
 	wait for 60ns;

@@ -12,7 +12,7 @@ end entity cpu_nuevo;
 
 architecture cpu of cpu_nuevo is
 
-type estado is(inicio, activar_leer_pc, activar_esc_pc, reset_pc, espera, escribir_ram, activar_leer_ram, activar_esc_ram, leer_ram,
+type estado is(inicio, activar_leer_pc, activar_esc_pc, cambiar_pc, reset_pc, espera, escribir_ram, activar_leer_ram, activar_esc_ram, leer_ram,
 					mostrar_salida, activar_leer_ri, activar_esc_ri, leer_ri, escribir_ri, activar_leer_op1, activar_esc_op1, escribir_op1, leer_op1, incrementar_pc,
 					activar_esc_data, activar_leer_data, escribir_data, leer_data, activar_leer_op2, activar_esc_op2, escribir_op2, leer_op2,
 					activar_carga_alu, activar_esc_resultado, activar_leer_resultado, escribir_resultado, leer_resultado,
@@ -30,7 +30,7 @@ signal in_ram, out_ram, out_pc, in_ri, out_ri, in_op1, out_op1, in_op2, out_op2,
 		 
 signal donde_leer: std_logic_vector (1 downto 0):= "00";
 signal codigo_operacion_alu: std_logic_vector (2 downto 0):= "000";
-		 
+signal pc_nuevo: std_logic_vector (5 downto 0):="000000";		 
 signal in_pc, posicion_ram, posicion_actual: std_logic_vector (7 downto 0):="00000000";
 		 
 		 
@@ -180,10 +180,22 @@ begin
 							estadoSiguiente<=activar_esc_data;
 							donde_leer<="10";
 							op_a_cargar<='1';
-							
+								
 						when others=>
-							estadoSiguiente<=espera;
+							if out_ri>="10000000" then
+								if out_ri>="11000000" then
+									estadoSiguiente<=espera;
+								else
+									estadosiguiente<=activar_esc_pc;
+									pc_nuevo<=out_ri (5 downto 0);
+								end if;
+							else
+								estadoSiguiente<=espera;
+							end if;
 					end case;
+				
+				when activar_esc_pc=>estadoSiguiente<=cambiar_pc;
+				when cambiar_pc=>estadoSiguiente<=activar_leer_pc;
 				when activar_esc_data=>estadoSiguiente<=escribir_data;
 				when escribir_data=>estadoSiguiente<=activar_leer_data;
 				when activar_leer_data=>
@@ -286,7 +298,16 @@ begin
 		when activar_leer_pc=>
 			en_pc_v:='1';
 			wr_pc_v:='0';
+		
+		when activar_esc_pc=>
+			en_pc_v:='1';
+			wr_pc_v:='1';
 			
+		when cambiar_pc=>
+			en_pc_v:='1';
+			wr_pc_v:='1';
+			in_pc<="00"&pc_nuevo;
+		
 		when escribir_ram=>
 			en_ram_v:='1';
 			wr_ram_v:='1';

@@ -2,103 +2,127 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
+Type  : Slow Model Setup 'estadoSiguiente.cambiar_pc'
+Slack : -6.764
+TNS   : -32.501
+
 Type  : Slow Model Setup 'control[0]'
-Slack : -6.283
-TNS   : -417.869
+Slack : -5.776
+TNS   : -480.641
 
 Type  : Slow Model Setup 'donde_leer[0]'
-Slack : -5.788
-TNS   : -42.768
-
-Type  : Slow Model Setup 'estadoSiguiente.escribir_op1'
-Slack : -5.689
-TNS   : -56.590
-
-Type  : Slow Model Setup 'estadoSiguiente.escribir_op2'
-Slack : -5.202
-TNS   : -50.378
+Slack : -5.284
+TNS   : -41.027
 
 Type  : Slow Model Setup 'estadoSiguiente.escribir_ram'
-Slack : -4.485
-TNS   : -24.156
+Slack : -5.196
+TNS   : -28.059
+
+Type  : Slow Model Setup 'estadoSiguiente.escribir_op2'
+Slack : -4.878
+TNS   : -43.924
+
+Type  : Slow Model Setup 'estadoSiguiente.escribir_op1'
+Slack : -4.607
+TNS   : -40.285
 
 Type  : Slow Model Setup 'estadoSiguiente.escribir_status'
-Slack : -4.015
-TNS   : -8.007
-
-Type  : Slow Model Setup 'estadoSiguiente.incrementar_pc'
-Slack : -3.697
-TNS   : -19.035
+Slack : -3.906
+TNS   : -7.320
 
 Type  : Slow Model Setup 'estadoSiguiente.escribir_salida'
-Slack : -1.504
-TNS   : -11.160
+Slack : -2.647
+TNS   : -17.959
 
 Type  : Slow Model Setup 'estadoSiguiente.desactivar_salida'
-Slack : -0.021
-TNS   : -0.021
-
-Type  : Slow Model Hold 'estadoSiguiente.escribir_op2'
-Slack : -2.781
-TNS   : -18.849
-
-Type  : Slow Model Hold 'donde_leer[0]'
-Slack : -2.500
-TNS   : -17.704
-
-Type  : Slow Model Hold 'estadoSiguiente.incrementar_pc'
-Slack : -2.414
-TNS   : -10.495
+Slack : 0.135
+TNS   : 0.000
 
 Type  : Slow Model Hold 'estadoSiguiente.escribir_op1'
-Slack : -2.294
-TNS   : -14.953
+Slack : -3.788
+TNS   : -28.125
+
+Type  : Slow Model Hold 'estadoSiguiente.escribir_op2'
+Slack : -3.517
+TNS   : -25.957
+
+Type  : Slow Model Hold 'donde_leer[0]'
+Slack : -2.869
+TNS   : -19.668
 
 Type  : Slow Model Hold 'control[0]'
-Slack : -1.936
-TNS   : -17.078
+Slack : -2.554
+TNS   : -11.655
 
 Type  : Slow Model Hold 'estadoSiguiente.escribir_ram'
-Slack : -1.288
-TNS   : -5.925
+Slack : -1.280
+TNS   : -3.554
+
+Type  : Slow Model Hold 'estadoSiguiente.cambiar_pc'
+Slack : -0.625
+TNS   : -2.816
 
 Type  : Slow Model Hold 'estadoSiguiente.desactivar_salida'
-Slack : -0.240
-TNS   : -1.837
+Slack : -0.416
+TNS   : -3.221
 
 Type  : Slow Model Hold 'estadoSiguiente.escribir_salida'
-Slack : 0.462
+Slack : 0.965
 TNS   : 0.000
 
 Type  : Slow Model Hold 'estadoSiguiente.escribir_status'
-Slack : 3.570
+Slack : 2.760
 TNS   : 0.000
 
+Type  : Slow Model Recovery 'estadoSiguiente.desactivar_salida'
+Slack : -6.727
+TNS   : -6.727
+
 Type  : Slow Model Recovery 'estadoSiguiente.espera'
-Slack : -6.470
-TNS   : -29.771
+Slack : -5.965
+TNS   : -18.812
 
 Type  : Slow Model Recovery 'estadoSiguiente.activar_carga_alu'
-Slack : -3.780
-TNS   : -7.068
+Slack : -5.463
+TNS   : -9.730
 
-Type  : Slow Model Removal 'estadoSiguiente.activar_carga_alu'
-Slack : -0.397
-TNS   : -0.600
+Type  : Slow Model Recovery 'estadoSiguiente.activar_esc_data'
+Slack : -4.479
+TNS   : -4.479
 
 Type  : Slow Model Removal 'estadoSiguiente.espera'
-Slack : -0.177
-TNS   : -0.348
+Slack : -0.769
+TNS   : -0.905
+
+Type  : Slow Model Removal 'estadoSiguiente.desactivar_salida'
+Slack : 0.527
+TNS   : 0.000
+
+Type  : Slow Model Removal 'estadoSiguiente.activar_esc_data'
+Slack : 0.590
+TNS   : 0.000
+
+Type  : Slow Model Removal 'estadoSiguiente.activar_carga_alu'
+Slack : 0.700
+TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'control[0]'
 Slack : -2.567
-TNS   : -392.719
+TNS   : -404.591
 
 Type  : Slow Model Minimum Pulse Width 'donde_leer[0]'
 Slack : 0.500
 TNS   : 0.000
 
 Type  : Slow Model Minimum Pulse Width 'estadoSiguiente.activar_carga_alu'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'estadoSiguiente.activar_esc_data'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Slow Model Minimum Pulse Width 'estadoSiguiente.cambiar_pc'
 Slack : 0.500
 TNS   : 0.000
 
@@ -130,107 +154,127 @@ Type  : Slow Model Minimum Pulse Width 'estadoSiguiente.espera'
 Slack : 0.500
 TNS   : 0.000
 
-Type  : Slow Model Minimum Pulse Width 'estadoSiguiente.incrementar_pc'
-Slack : 0.500
-TNS   : 0.000
+Type  : Fast Model Setup 'estadoSiguiente.escribir_op2'
+Slack : -2.185
+TNS   : -17.923
 
 Type  : Fast Model Setup 'estadoSiguiente.escribir_op1'
-Slack : -2.462
-TNS   : -22.598
+Slack : -2.110
+TNS   : -16.877
 
-Type  : Fast Model Setup 'estadoSiguiente.escribir_op2'
-Slack : -2.329
-TNS   : -21.006
+Type  : Fast Model Setup 'estadoSiguiente.cambiar_pc'
+Slack : -2.055
+TNS   : -10.134
 
 Type  : Fast Model Setup 'donde_leer[0]'
-Slack : -2.022
-TNS   : -15.244
+Slack : -2.011
+TNS   : -15.728
+
+Type  : Fast Model Setup 'estadoSiguiente.escribir_ram'
+Slack : -1.620
+TNS   : -8.793
 
 Type  : Fast Model Setup 'estadoSiguiente.escribir_status'
-Slack : -1.493
-TNS   : -2.975
+Slack : -1.466
+TNS   : -2.770
 
 Type  : Fast Model Setup 'control[0]'
 Slack : -1.460
-TNS   : -56.726
-
-Type  : Fast Model Setup 'estadoSiguiente.escribir_ram'
-Slack : -1.443
-TNS   : -7.629
-
-Type  : Fast Model Setup 'estadoSiguiente.incrementar_pc'
-Slack : -0.412
-TNS   : -1.543
+TNS   : -70.733
 
 Type  : Fast Model Setup 'estadoSiguiente.escribir_salida'
-Slack : -0.347
-TNS   : -2.304
+Slack : -0.665
+TNS   : -4.475
 
 Type  : Fast Model Setup 'estadoSiguiente.desactivar_salida'
-Slack : 0.070
+Slack : 0.010
 TNS   : 0.000
 
-Type  : Fast Model Hold 'control[0]'
-Slack : -1.208
-TNS   : -37.767
-
-Type  : Fast Model Hold 'donde_leer[0]'
-Slack : -1.175
-TNS   : -8.694
+Type  : Fast Model Hold 'estadoSiguiente.escribir_op1'
+Slack : -1.471
+TNS   : -10.990
 
 Type  : Fast Model Hold 'estadoSiguiente.escribir_op2'
-Slack : -1.138
-TNS   : -7.950
+Slack : -1.396
+TNS   : -10.390
 
-Type  : Fast Model Hold 'estadoSiguiente.escribir_op1'
-Slack : -1.005
-TNS   : -6.886
+Type  : Fast Model Hold 'control[0]'
+Slack : -1.274
+TNS   : -25.781
 
-Type  : Fast Model Hold 'estadoSiguiente.incrementar_pc'
-Slack : -0.724
-TNS   : -3.258
+Type  : Fast Model Hold 'donde_leer[0]'
+Slack : -1.170
+TNS   : -8.344
 
 Type  : Fast Model Hold 'estadoSiguiente.escribir_ram'
-Slack : -0.413
-TNS   : -2.054
+Slack : -0.363
+TNS   : -1.064
+
+Type  : Fast Model Hold 'estadoSiguiente.cambiar_pc'
+Slack : -0.192
+TNS   : -0.899
 
 Type  : Fast Model Hold 'estadoSiguiente.desactivar_salida'
-Slack : 0.573
+Slack : 0.625
 TNS   : 0.000
 
 Type  : Fast Model Hold 'estadoSiguiente.escribir_salida'
-Slack : 0.764
+Slack : 0.965
 TNS   : 0.000
 
 Type  : Fast Model Hold 'estadoSiguiente.escribir_status'
-Slack : 2.085
+Slack : 1.830
 TNS   : 0.000
 
+Type  : Fast Model Recovery 'estadoSiguiente.desactivar_salida'
+Slack : -2.224
+TNS   : -2.224
+
 Type  : Fast Model Recovery 'estadoSiguiente.espera'
-Slack : -2.037
-TNS   : -10.391
+Slack : -1.951
+TNS   : -6.631
 
 Type  : Fast Model Recovery 'estadoSiguiente.activar_carga_alu'
-Slack : -1.397
-TNS   : -2.645
+Slack : -1.927
+TNS   : -3.466
 
-Type  : Fast Model Removal 'estadoSiguiente.activar_carga_alu'
-Slack : -0.117
-TNS   : -0.165
+Type  : Fast Model Recovery 'estadoSiguiente.activar_esc_data'
+Slack : -1.618
+TNS   : -1.618
 
 Type  : Fast Model Removal 'estadoSiguiente.espera'
-Slack : -0.054
-TNS   : -0.102
+Slack : -0.245
+TNS   : -0.281
+
+Type  : Fast Model Removal 'estadoSiguiente.desactivar_salida'
+Slack : 0.168
+TNS   : 0.000
+
+Type  : Fast Model Removal 'estadoSiguiente.activar_esc_data'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast Model Removal 'estadoSiguiente.activar_carga_alu'
+Slack : 0.227
+TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'control[0]'
 Slack : -1.627
-TNS   : -258.746
+TNS   : -266.746
 
 Type  : Fast Model Minimum Pulse Width 'donde_leer[0]'
 Slack : 0.500
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'estadoSiguiente.activar_carga_alu'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'estadoSiguiente.activar_esc_data'
+Slack : 0.500
+TNS   : 0.000
+
+Type  : Fast Model Minimum Pulse Width 'estadoSiguiente.cambiar_pc'
 Slack : 0.500
 TNS   : 0.000
 
@@ -259,10 +303,6 @@ Slack : 0.500
 TNS   : 0.000
 
 Type  : Fast Model Minimum Pulse Width 'estadoSiguiente.espera'
-Slack : 0.500
-TNS   : 0.000
-
-Type  : Fast Model Minimum Pulse Width 'estadoSiguiente.incrementar_pc'
 Slack : 0.500
 TNS   : 0.000
 
